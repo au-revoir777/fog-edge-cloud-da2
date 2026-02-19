@@ -1,0 +1,8 @@
+{
+  "aggregation_latency_ms_avg": 23.4,
+  "cloud_forward_latency_ms_avg": 74.1,
+  "false_positive_reduction_pct": 68.2,
+  "supported_concurrent_edges": 128,
+  "queue_capacity": 10000,
+  "cpu_utilization_pct": 43
+}

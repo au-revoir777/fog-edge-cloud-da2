@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Respiratory Monitoring Dashboard</title>
+  <style>
+    body { font-family: Arial; margin: 20px; background:#f4f7fb; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .card { background:#fff; padding:16px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+    table { width:100%; border-collapse: collapse; }
+    th,td { border-bottom:1px solid #ddd; padding:8px; text-align:left; }
+  </style>
+</head>
+<body>
+  <h1>Smart Remote Respiratory Monitoring</h1>
+  <div class="grid">
+    <div class="card"><h3>Total Alerts</h3><p id="total">0</p></div>
+    <div class="card"><h3>Severe Alerts</h3><p id="severe">0</p></div>
+    <div class="card"><h3>Mild Alerts</h3><p id="mild">0</p></div>
+  </div>
+  <div class="card" style="margin-top:16px;">
+    <h3>Recent Alerts</h3>
+    <table><thead><tr><th>Device</th><th>Class</th><th>Confidence</th></tr></thead><tbody id="rows"></tbody></table>
+  </div>
+<script>
+const sample=[
+  {device_id:'edge-001',cls:'severe',confidence:0.91},
+  {device_id:'edge-009',cls:'mild',confidence:0.76},
+  {device_id:'edge-004',cls:'severe',confidence:0.88}
+];
+document.getElementById('total').textContent=sample.length;
+document.getElementById('severe').textContent=sample.filter(x=>x.cls==='severe').length;
+document.getElementById('mild').textContent=sample.filter(x=>x.cls==='mild').length;
+document.getElementById('rows').innerHTML=sample.map(a=>`<tr><td>${a.device_id}</td><td>${a.cls}</td><td>${a.confidence}</td></tr>`).join('');
+</script>
+</body>
+</html>

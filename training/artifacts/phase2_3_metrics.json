@@ -1,0 +1,12 @@
+{
+  "float_accuracy": 0.936,
+  "int8_accuracy": 0.928,
+  "accuracy_loss": 0.008,
+  "severe_recall": 0.962,
+  "severe_precision": 0.913,
+  "model_size_kb": 312,
+  "int8_model_size_kb": 94,
+  "estimated_sram_kb": 88,
+  "estimated_flash_kb": 421,
+  "edge_inference_latency_ms": 41.3
+}

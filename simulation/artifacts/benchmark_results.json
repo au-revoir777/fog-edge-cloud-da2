@@ -1,0 +1,12 @@
+{
+  "cloud_only": {"latency_ms": 472, "bandwidth_kbps": 510, "accuracy": 0.931},
+  "edge_fog_cloud": {"latency_ms": 164, "bandwidth_kbps": 88, "accuracy": 0.928},
+  "bandwidth_reduction_pct": 82.75,
+  "end_to_end_target_met": true,
+  "false_positive_rate": 0.043,
+  "severe_recall": 0.958,
+  "severe_precision": 0.907,
+  "fog_cpu_utilization_pct": 43,
+  "edge_energy_mj_per_window": 6.8,
+  "roc_auc_severe": 0.963
+}
