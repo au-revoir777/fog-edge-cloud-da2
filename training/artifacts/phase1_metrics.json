@@ -1,0 +1,8 @@
+{
+  "samples_total": 2832,
+  "train_samples": 2124,
+  "test_samples": 708,
+  "train_patients": 18,
+  "test_patients": 6,
+  "label_distribution": {"0": 1764, "1": 702, "2": 366}
+}

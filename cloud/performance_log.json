@@ -1,0 +1,6 @@
+{
+  "api_p95_latency_ms": 52,
+  "ingest_capacity_writes_per_sec": 12600,
+  "uptime_target": "99.9%",
+  "data_loss_pct": 0.08
+}
