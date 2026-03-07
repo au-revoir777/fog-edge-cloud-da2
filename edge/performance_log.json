@@ -1,8 +1,0 @@
-{
-  "edge_inference_latency_ms_p50": 38.1,
-  "edge_inference_latency_ms_p95": 47.2,
-  "window_period_s": 5,
-  "sram_kb": 88,
-  "flash_kb": 421,
-  "offline_buffer_windows": 120
-}
