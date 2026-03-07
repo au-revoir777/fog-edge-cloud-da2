@@ -1,8 +1,26 @@
 {
-  "samples_total": 2832,
-  "train_samples": 2124,
-  "test_samples": 708,
-  "train_patients": 18,
-  "test_patients": 6,
-  "label_distribution": {"0": 1764, "1": 702, "2": 366}
+  "samples_total":5027,
+  "train_samples":3841,
+  "test_samples":1186,
+  "label_distribution_all":{
+    "0":4837,
+    "1":87,
+    "2":103
+  },
+  "label_distribution_train":{
+    "0":3697,
+    "1":66,
+    "2":78
+  },
+  "label_distribution_test":{
+    "0":1140,
+    "1":21,
+    "2":25
+  },
+  "class_weights":{
+    "0":0.3464268486,
+    "2":16.2686084142,
+    "1":19.2605363985
+  },
+  "feature_count":29
 }
