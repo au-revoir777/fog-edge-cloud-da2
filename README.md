@@ -46,7 +46,7 @@ fog-edge/
 │           ├── fig5_cv_fold_performance.png
 │           ├── fig6_threshold_sweep.png
 │           └── fig7_nfr_compliance.png
-├── DA2_Report_Final.docx           # Full DA-2 submission report
+├── 23BCE5122_23BCE1256_DA2.pdf           # Full DA-2 submission report
 └── README.md
 ```
 
