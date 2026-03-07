@@ -1,26 +1,32 @@
 {
+  "pipeline_version":"v4",
+  "threshold_fix":"Severe < 90, Mild 90-95, Normal >= 95",
   "samples_total":5027,
-  "train_samples":3841,
-  "test_samples":1186,
+  "train_samples":3922,
+  "test_samples":1105,
   "label_distribution_all":{
-    "0":4837,
-    "1":87,
-    "2":103
+    "0":3979,
+    "1":858,
+    "2":190
   },
   "label_distribution_train":{
-    "0":3697,
-    "1":66,
-    "2":78
+    "0":3135,
+    "1":644,
+    "2":143
   },
   "label_distribution_test":{
-    "0":1140,
-    "1":21,
-    "2":25
+    "0":844,
+    "1":214,
+    "2":47
   },
   "class_weights":{
-    "0":0.3464268486,
-    "2":16.2686084142,
-    "1":19.2605363985
+    "0":0.4211275865,
+    "1":1.952991453,
+    "2":8.8192982456
   },
-  "feature_count":29
+  "feature_count":29,
+  "window_size_samples":1250,
+  "window_size_seconds":10,
+  "overlap_seconds":5,
+  "sampling_rate_hz":125
 }

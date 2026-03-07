@@ -1,16 +1,16 @@
 PS C:\Users\hp\Desktop\fog-edge\fog-edge\training> python -m train_tinyml_model
-2026-03-07 12:06:34.532290: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2026-03-07 12:06:37.779578: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-07 16:26:47.908796: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-03-07 16:26:51.298594: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
 
 Raw class distribution (train):
-  Class 0: 3697 samples
-  Class 1: 66 samples
-  Class 2: 78 samples
+  Class 0: 3135 samples
+  Class 1: 644 samples
+  Class 2: 143 samples
 
 Class distribution (test — held out):
-  Class 0: 1140 samples
-  Class 1: 21 samples
-  Class 2: 25 samples
+  Class 0: 844 samples
+  Class 1: 214 samples
+  Class 2: 47 samples
 
 Generating Figure 1: class distribution...
 C:\Users\hp\Desktop\fog-edge\fog-edge\training\train_tinyml_model.py:115: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
@@ -26,280 +26,280 @@ Stratified 5-Fold Cross-Validation
 Fold 1/5
   Oversampling Stage 1...
   Oversampled (SMOTE):
-    Class 0: 2957 samples
-    Class 1: 2957 samples
-2026-03-07 12:06:43.224800: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+    Class 0: 2508 samples
+    Class 1: 2508 samples
+2026-03-07 16:26:56.637211: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
 To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
   Oversampling Stage 2...
   Oversampled (SMOTE):
-    Class 0: 63 samples
-    Class 1: 63 samples
+    Class 0: 515 samples
+    Class 1: 515 samples
 
   Stage2 threshold sweep (recall≥0.95, prec≥0.7):
     Thresh   Recall     Prec       F1   TP   FN   FP
-     0.050    1.000    0.517    0.682   15    0   14
-     0.075    1.000    0.517    0.682   15    0   14
-     0.100    1.000    0.517    0.682   15    0   14
-     0.125    1.000    0.517    0.682   15    0   14
-     0.150    1.000    0.517    0.682   15    0   14
-     0.175    1.000    0.517    0.682   15    0   14
-     0.200    1.000    0.517    0.682   15    0   14
-     0.225    1.000    0.517    0.682   15    0   14
-     0.250    1.000    0.517    0.682   15    0   14
-     0.275    1.000    0.536    0.698   15    0   13
-     0.300    1.000    0.536    0.698   15    0   13
-     0.325    1.000    0.577    0.732   15    0   11
-     0.350    1.000    0.577    0.732   15    0   11
-     0.375    1.000    0.577    0.732   15    0   11
-     0.400    1.000    0.600    0.750   15    0   10
-     0.425    0.933    0.609    0.737   14    1    9
-     0.450    0.933    0.667    0.778   14    1    7
-     0.475    0.933    0.700    0.800   14    1    6
-     0.500    0.667    0.833    0.741   10    5    2
-     0.525    0.467    0.875    0.609    7    8    1
-     0.550    0.467    0.875    0.609    7    8    1
-     0.575    0.333    0.833    0.476    5   10    1
-     0.600    0.333    0.833    0.476    5   10    1
-     0.625    0.333    0.833    0.476    5   10    1
-     0.650    0.267    0.800    0.400    4   11    1
-     0.675    0.267    0.800    0.400    4   11    1
-     0.700    0.200    1.000    0.333    3   12    0
-     0.725    0.200    1.000    0.333    3   12    0
-     0.750    0.133    1.000    0.235    2   13    0
-     0.775    0.133    1.000    0.235    2   13    0
-     0.800    0.067    1.000    0.125    1   14    0
-     0.825    0.067    1.000    0.125    1   14    0
-     0.850    0.000    0.000    0.000    0   15    0
-     0.875    0.000    0.000    0.000    0   15    0
-     0.900    0.000    0.000    0.000    0   15    0
-     0.925    0.000    0.000    0.000    0   15    0
-     0.950    0.000    0.000    0.000    0   15    0
+     0.050    1.000    1.000    1.000   29    0    0
+     0.075    1.000    1.000    1.000   29    0    0
+     0.100    1.000    1.000    1.000   29    0    0
+     0.125    1.000    1.000    1.000   29    0    0
+     0.150    1.000    1.000    1.000   29    0    0
+     0.175    1.000    1.000    1.000   29    0    0
+     0.200    1.000    1.000    1.000   29    0    0
+     0.225    1.000    1.000    1.000   29    0    0
+     0.250    1.000    1.000    1.000   29    0    0
+     0.275    1.000    1.000    1.000   29    0    0
+     0.300    1.000    1.000    1.000   29    0    0
+     0.325    1.000    1.000    1.000   29    0    0
+     0.350    1.000    1.000    1.000   29    0    0
+     0.375    1.000    1.000    1.000   29    0    0
+     0.400    1.000    1.000    1.000   29    0    0
+     0.425    1.000    1.000    1.000   29    0    0
+     0.450    1.000    1.000    1.000   29    0    0
+     0.475    1.000    1.000    1.000   29    0    0
+     0.500    1.000    1.000    1.000   29    0    0
+     0.525    1.000    1.000    1.000   29    0    0
+     0.550    1.000    1.000    1.000   29    0    0
+     0.575    1.000    1.000    1.000   29    0    0
+     0.600    1.000    1.000    1.000   29    0    0
+     0.625    1.000    1.000    1.000   29    0    0
+     0.650    1.000    1.000    1.000   29    0    0
+     0.675    1.000    1.000    1.000   29    0    0
+     0.700    1.000    1.000    1.000   29    0    0
+     0.725    1.000    1.000    1.000   29    0    0
+     0.750    1.000    1.000    1.000   29    0    0
+     0.775    1.000    1.000    1.000   29    0    0
+     0.800    1.000    1.000    1.000   29    0    0
+     0.825    1.000    1.000    1.000   29    0    0
+     0.850    1.000    1.000    1.000   29    0    0
+     0.875    1.000    1.000    1.000   29    0    0
+     0.900    1.000    1.000    1.000   29    0    0
+     0.925    0.966    1.000    0.983   28    1    0
+     0.950    0.966    1.000    0.983   28    1    0
 
-  [Selected] Thresh=0.400 | Recall=1.000 | Prec=0.600 | F1=0.750
-  Strategy: recall≥0.95 (precision relaxed)
-  Fold 1: acc=0.987 | sev_recall=1.000 | sev_prec=0.600 | mild_recall=0.286
+  [Selected] Thresh=0.050 | Recall=1.000 | Prec=1.000 | F1=1.000
+  Strategy: recall≥0.95 AND prec≥0.7
+  Fold 1: acc=0.985 | sev_recall=1.000 | sev_prec=1.000 | mild_recall=0.992
 
 Fold 2/5
   Oversampling Stage 1...
   Oversampled (SMOTE):
-    Class 0: 2957 samples
-    Class 1: 2957 samples
+    Class 0: 2508 samples
+    Class 1: 2508 samples
   Oversampling Stage 2...
   Oversampled (SMOTE):
-    Class 0: 63 samples
-    Class 1: 63 samples
+    Class 0: 515 samples
+    Class 1: 515 samples
 
   Stage2 threshold sweep (recall≥0.95, prec≥0.7):
     Thresh   Recall     Prec       F1   TP   FN   FP
-     0.050    1.000    0.536    0.698   15    0   13
-     0.075    1.000    0.536    0.698   15    0   13
-     0.100    1.000    0.536    0.698   15    0   13
-     0.125    1.000    0.536    0.698   15    0   13
-     0.150    1.000    0.536    0.698   15    0   13
-     0.175    1.000    0.536    0.698   15    0   13
-     0.200    1.000    0.536    0.698   15    0   13
-     0.225    1.000    0.536    0.698   15    0   13
-     0.250    1.000    0.536    0.698   15    0   13
-     0.275    1.000    0.536    0.698   15    0   13
-     0.300    1.000    0.536    0.698   15    0   13
-     0.325    1.000    0.556    0.714   15    0   12
-     0.350    1.000    0.577    0.732   15    0   11
-     0.375    1.000    0.625    0.769   15    0    9
-     0.400    1.000    0.652    0.789   15    0    8
-     0.425    1.000    0.682    0.811   15    0    7
-     0.450    0.933    0.700    0.800   14    1    6
-     0.475    0.800    0.667    0.727   12    3    6
-     0.500    0.600    0.692    0.643    9    6    4
-     0.525    0.533    0.800    0.640    8    7    2
-     0.550    0.267    0.800    0.400    4   11    1
-     0.575    0.200    0.750    0.316    3   12    1
-     0.600    0.133    1.000    0.235    2   13    0
-     0.625    0.067    1.000    0.125    1   14    0
-     0.650    0.067    1.000    0.125    1   14    0
-     0.675    0.067    1.000    0.125    1   14    0
-     0.700    0.000    0.000    0.000    0   15    0
-     0.725    0.000    0.000    0.000    0   15    0
-     0.750    0.000    0.000    0.000    0   15    0
-     0.775    0.000    0.000    0.000    0   15    0
-     0.800    0.000    0.000    0.000    0   15    0
-     0.825    0.000    0.000    0.000    0   15    0
-     0.850    0.000    0.000    0.000    0   15    0
-     0.875    0.000    0.000    0.000    0   15    0
-     0.900    0.000    0.000    0.000    0   15    0
-     0.925    0.000    0.000    0.000    0   15    0
-     0.950    0.000    0.000    0.000    0   15    0
+     0.050    1.000    0.935    0.967   29    0    2
+     0.075    1.000    0.967    0.983   29    0    1
+     0.100    1.000    0.967    0.983   29    0    1
+     0.125    1.000    0.967    0.983   29    0    1
+     0.150    1.000    0.967    0.983   29    0    1
+     0.175    1.000    0.967    0.983   29    0    1
+     0.200    1.000    1.000    1.000   29    0    0
+     0.225    1.000    1.000    1.000   29    0    0
+     0.250    1.000    1.000    1.000   29    0    0
+     0.275    1.000    1.000    1.000   29    0    0
+     0.300    1.000    1.000    1.000   29    0    0
+     0.325    1.000    1.000    1.000   29    0    0
+     0.350    1.000    1.000    1.000   29    0    0
+     0.375    1.000    1.000    1.000   29    0    0
+     0.400    1.000    1.000    1.000   29    0    0
+     0.425    1.000    1.000    1.000   29    0    0
+     0.450    1.000    1.000    1.000   29    0    0
+     0.475    1.000    1.000    1.000   29    0    0
+     0.500    1.000    1.000    1.000   29    0    0
+     0.525    1.000    1.000    1.000   29    0    0
+     0.550    1.000    1.000    1.000   29    0    0
+     0.575    1.000    1.000    1.000   29    0    0
+     0.600    1.000    1.000    1.000   29    0    0
+     0.625    1.000    1.000    1.000   29    0    0
+     0.650    1.000    1.000    1.000   29    0    0
+     0.675    1.000    1.000    1.000   29    0    0
+     0.700    1.000    1.000    1.000   29    0    0
+     0.725    1.000    1.000    1.000   29    0    0
+     0.750    1.000    1.000    1.000   29    0    0
+     0.775    1.000    1.000    1.000   29    0    0
+     0.800    1.000    1.000    1.000   29    0    0
+     0.825    1.000    1.000    1.000   29    0    0
+     0.850    1.000    1.000    1.000   29    0    0
+     0.875    1.000    1.000    1.000   29    0    0
+     0.900    1.000    1.000    1.000   29    0    0
+     0.925    1.000    1.000    1.000   29    0    0
+     0.950    0.931    1.000    0.964   27    2    0
 
-  [Selected] Thresh=0.425 | Recall=1.000 | Prec=0.682 | F1=0.811
-  Strategy: recall≥0.95 (precision relaxed)
-  Fold 2: acc=0.991 | sev_recall=1.000 | sev_prec=0.682 | mild_recall=0.462
+  [Selected] Thresh=0.200 | Recall=1.000 | Prec=1.000 | F1=1.000
+  Strategy: recall≥0.95 AND prec≥0.7
+  Fold 2: acc=0.990 | sev_recall=1.000 | sev_prec=1.000 | mild_recall=0.992
 
 Fold 3/5
   Oversampling Stage 1...
   Oversampled (SMOTE):
-    Class 0: 2958 samples
-    Class 1: 2958 samples
+    Class 0: 2508 samples
+    Class 1: 2508 samples
   Oversampling Stage 2...
   Oversampled (SMOTE):
-    Class 0: 62 samples
-    Class 1: 62 samples
+    Class 0: 515 samples
+    Class 1: 515 samples
 
   Stage2 threshold sweep (recall≥0.95, prec≥0.7):
     Thresh   Recall     Prec       F1   TP   FN   FP
-     0.050    1.000    0.552    0.711   16    0   13
-     0.075    1.000    0.571    0.727   16    0   12
-     0.100    1.000    0.571    0.727   16    0   12
-     0.125    1.000    0.593    0.744   16    0   11
-     0.150    1.000    0.593    0.744   16    0   11
-     0.175    1.000    0.593    0.744   16    0   11
-     0.200    1.000    0.640    0.780   16    0    9
-     0.225    1.000    0.640    0.780   16    0    9
-     0.250    1.000    0.640    0.780   16    0    9
-     0.275    1.000    0.640    0.780   16    0    9
-     0.300    1.000    0.640    0.780   16    0    9
-     0.325    1.000    0.640    0.780   16    0    9
-     0.350    1.000    0.696    0.821   16    0    7
-     0.375    1.000    0.727    0.842   16    0    6
-     0.400    1.000    0.727    0.842   16    0    6
-     0.425    1.000    0.727    0.842   16    0    6
-     0.450    1.000    0.727    0.842   16    0    6
-     0.475    1.000    0.762    0.865   16    0    5
-     0.500    1.000    0.762    0.865   16    0    5
-     0.525    1.000    0.889    0.941   16    0    2
-     0.550    1.000    0.889    0.941   16    0    2
-     0.575    0.938    0.882    0.909   15    1    2
-     0.600    0.812    0.867    0.839   13    3    2
-     0.625    0.812    0.929    0.867   13    3    1
-     0.650    0.688    1.000    0.815   11    5    0
-     0.675    0.625    1.000    0.769   10    6    0
-     0.700    0.562    1.000    0.720    9    7    0
-     0.725    0.438    1.000    0.609    7    9    0
-     0.750    0.312    1.000    0.476    5   11    0
-     0.775    0.250    1.000    0.400    4   12    0
-     0.800    0.250    1.000    0.400    4   12    0
-     0.825    0.125    1.000    0.222    2   14    0
-     0.850    0.125    1.000    0.222    2   14    0
-     0.875    0.062    1.000    0.118    1   15    0
-     0.900    0.062    1.000    0.118    1   15    0
-     0.925    0.062    1.000    0.118    1   15    0
-     0.950    0.000    0.000    0.000    0   16    0
+     0.050    1.000    0.778    0.875   28    0    8
+     0.075    1.000    0.903    0.949   28    0    3
+     0.100    1.000    0.966    0.983   28    0    1
+     0.125    1.000    0.966    0.983   28    0    1
+     0.150    1.000    0.966    0.983   28    0    1
+     0.175    1.000    0.966    0.983   28    0    1
+     0.200    1.000    0.966    0.983   28    0    1
+     0.225    1.000    0.966    0.983   28    0    1
+     0.250    1.000    1.000    1.000   28    0    0
+     0.275    1.000    1.000    1.000   28    0    0
+     0.300    1.000    1.000    1.000   28    0    0
+     0.325    1.000    1.000    1.000   28    0    0
+     0.350    1.000    1.000    1.000   28    0    0
+     0.375    1.000    1.000    1.000   28    0    0
+     0.400    1.000    1.000    1.000   28    0    0
+     0.425    1.000    1.000    1.000   28    0    0
+     0.450    1.000    1.000    1.000   28    0    0
+     0.475    1.000    1.000    1.000   28    0    0
+     0.500    1.000    1.000    1.000   28    0    0
+     0.525    1.000    1.000    1.000   28    0    0
+     0.550    1.000    1.000    1.000   28    0    0
+     0.575    1.000    1.000    1.000   28    0    0
+     0.600    1.000    1.000    1.000   28    0    0
+     0.625    1.000    1.000    1.000   28    0    0
+     0.650    1.000    1.000    1.000   28    0    0
+     0.675    1.000    1.000    1.000   28    0    0
+     0.700    1.000    1.000    1.000   28    0    0
+     0.725    1.000    1.000    1.000   28    0    0
+     0.750    1.000    1.000    1.000   28    0    0
+     0.775    1.000    1.000    1.000   28    0    0
+     0.800    1.000    1.000    1.000   28    0    0
+     0.825    1.000    1.000    1.000   28    0    0
+     0.850    1.000    1.000    1.000   28    0    0
+     0.875    1.000    1.000    1.000   28    0    0
+     0.900    1.000    1.000    1.000   28    0    0
+     0.925    1.000    1.000    1.000   28    0    0
+     0.950    1.000    1.000    1.000   28    0    0
 
-  [Selected] Thresh=0.525 | Recall=1.000 | Prec=0.889 | F1=0.941
+  [Selected] Thresh=0.250 | Recall=1.000 | Prec=1.000 | F1=1.000
   Strategy: recall≥0.95 AND prec≥0.7
-  Fold 3: acc=0.997 | sev_recall=1.000 | sev_prec=0.889 | mild_recall=0.846
+  Fold 3: acc=0.990 | sev_recall=1.000 | sev_prec=1.000 | mild_recall=1.000
 
 Fold 4/5
   Oversampling Stage 1...
   Oversampled (SMOTE):
-    Class 0: 2958 samples
-    Class 1: 2958 samples
+    Class 0: 2508 samples
+    Class 1: 2508 samples
   Oversampling Stage 2...
   Oversampled (SMOTE):
-    Class 0: 62 samples
-    Class 1: 62 samples
+    Class 0: 515 samples
+    Class 1: 515 samples
 
   Stage2 threshold sweep (recall≥0.95, prec≥0.7):
     Thresh   Recall     Prec       F1   TP   FN   FP
-     0.050    1.000    0.552    0.711   16    0   13
-     0.075    1.000    0.552    0.711   16    0   13
-     0.100    1.000    0.552    0.711   16    0   13
-     0.125    1.000    0.552    0.711   16    0   13
-     0.150    1.000    0.552    0.711   16    0   13
-     0.175    1.000    0.552    0.711   16    0   13
-     0.200    1.000    0.552    0.711   16    0   13
-     0.225    1.000    0.552    0.711   16    0   13
-     0.250    1.000    0.552    0.711   16    0   13
-     0.275    1.000    0.552    0.711   16    0   13
-     0.300    1.000    0.552    0.711   16    0   13
-     0.325    1.000    0.552    0.711   16    0   13
-     0.350    1.000    0.552    0.711   16    0   13
-     0.375    1.000    0.552    0.711   16    0   13
-     0.400    1.000    0.593    0.744   16    0   11
-     0.425    1.000    0.593    0.744   16    0   11
-     0.450    1.000    0.696    0.821   16    0    7
-     0.475    0.938    0.882    0.909   15    1    2
-     0.500    0.875    0.875    0.875   14    2    2
-     0.525    0.875    0.875    0.875   14    2    2
-     0.550    0.812    0.867    0.839   13    3    2
-     0.575    0.688    0.917    0.786   11    5    1
-     0.600    0.625    0.909    0.741   10    6    1
-     0.625    0.562    0.900    0.692    9    7    1
-     0.650    0.562    0.900    0.692    9    7    1
-     0.675    0.438    1.000    0.609    7    9    0
-     0.700    0.375    1.000    0.545    6   10    0
-     0.725    0.312    1.000    0.476    5   11    0
-     0.750    0.312    1.000    0.476    5   11    0
-     0.775    0.312    1.000    0.476    5   11    0
-     0.800    0.250    1.000    0.400    4   12    0
-     0.825    0.250    1.000    0.400    4   12    0
-     0.850    0.250    1.000    0.400    4   12    0
-     0.875    0.125    1.000    0.222    2   14    0
-     0.900    0.125    1.000    0.222    2   14    0
-     0.925    0.062    1.000    0.118    1   15    0
-     0.950    0.000    0.000    0.000    0   16    0
+     0.050    1.000    1.000    1.000   28    0    0
+     0.075    1.000    1.000    1.000   28    0    0
+     0.100    1.000    1.000    1.000   28    0    0
+     0.125    1.000    1.000    1.000   28    0    0
+     0.150    1.000    1.000    1.000   28    0    0
+     0.175    1.000    1.000    1.000   28    0    0
+     0.200    1.000    1.000    1.000   28    0    0
+     0.225    1.000    1.000    1.000   28    0    0
+     0.250    1.000    1.000    1.000   28    0    0
+     0.275    1.000    1.000    1.000   28    0    0
+     0.300    1.000    1.000    1.000   28    0    0
+     0.325    1.000    1.000    1.000   28    0    0
+     0.350    1.000    1.000    1.000   28    0    0
+     0.375    1.000    1.000    1.000   28    0    0
+     0.400    1.000    1.000    1.000   28    0    0
+     0.425    1.000    1.000    1.000   28    0    0
+     0.450    1.000    1.000    1.000   28    0    0
+     0.475    1.000    1.000    1.000   28    0    0
+     0.500    1.000    1.000    1.000   28    0    0
+     0.525    1.000    1.000    1.000   28    0    0
+     0.550    1.000    1.000    1.000   28    0    0
+     0.575    1.000    1.000    1.000   28    0    0
+     0.600    1.000    1.000    1.000   28    0    0
+     0.625    1.000    1.000    1.000   28    0    0
+     0.650    1.000    1.000    1.000   28    0    0
+     0.675    1.000    1.000    1.000   28    0    0
+     0.700    1.000    1.000    1.000   28    0    0
+     0.725    1.000    1.000    1.000   28    0    0
+     0.750    1.000    1.000    1.000   28    0    0
+     0.775    1.000    1.000    1.000   28    0    0
+     0.800    1.000    1.000    1.000   28    0    0
+     0.825    1.000    1.000    1.000   28    0    0
+     0.850    1.000    1.000    1.000   28    0    0
+     0.875    1.000    1.000    1.000   28    0    0
+     0.900    1.000    1.000    1.000   28    0    0
+     0.925    1.000    1.000    1.000   28    0    0
+     0.950    1.000    1.000    1.000   28    0    0
 
-  [Selected] Thresh=0.450 | Recall=1.000 | Prec=0.696 | F1=0.821
-  Strategy: recall≥0.95 (precision relaxed)
-  Fold 4: acc=0.991 | sev_recall=1.000 | sev_prec=0.696 | mild_recall=0.462
+  [Selected] Thresh=0.050 | Recall=1.000 | Prec=1.000 | F1=1.000
+  Strategy: recall≥0.95 AND prec≥0.7
+  Fold 4: acc=0.990 | sev_recall=1.000 | sev_prec=1.000 | mild_recall=0.992
 
 Fold 5/5
   Oversampling Stage 1...
   Oversampled (SMOTE):
-    Class 0: 2958 samples
-    Class 1: 2958 samples
+    Class 0: 2508 samples
+    Class 1: 2508 samples
   Oversampling Stage 2...
   Oversampled (SMOTE):
-    Class 0: 62 samples
-    Class 1: 62 samples
+    Class 0: 516 samples
+    Class 1: 516 samples
 
   Stage2 threshold sweep (recall≥0.95, prec≥0.7):
     Thresh   Recall     Prec       F1   TP   FN   FP
-     0.050    1.000    0.571    0.727   16    0   12
-     0.075    1.000    0.571    0.727   16    0   12
-     0.100    1.000    0.571    0.727   16    0   12
-     0.125    1.000    0.571    0.727   16    0   12
-     0.150    1.000    0.571    0.727   16    0   12
-     0.175    1.000    0.593    0.744   16    0   11
-     0.200    1.000    0.593    0.744   16    0   11
-     0.225    1.000    0.593    0.744   16    0   11
-     0.250    1.000    0.593    0.744   16    0   11
-     0.275    1.000    0.615    0.762   16    0   10
-     0.300    1.000    0.615    0.762   16    0   10
-     0.325    1.000    0.615    0.762   16    0   10
-     0.350    1.000    0.615    0.762   16    0   10
-     0.375    1.000    0.640    0.780   16    0    9
-     0.400    1.000    0.640    0.780   16    0    9
-     0.425    1.000    0.667    0.800   16    0    8
-     0.450    1.000    0.696    0.821   16    0    7
-     0.475    0.875    0.700    0.778   14    2    6
-     0.500    0.875    0.700    0.778   14    2    6
-     0.525    0.812    0.722    0.765   13    3    5
-     0.550    0.812    0.722    0.765   13    3    5
-     0.575    0.625    0.714    0.667   10    6    4
-     0.600    0.625    0.833    0.714   10    6    2
-     0.625    0.188    0.600    0.286    3   13    2
-     0.650    0.062    1.000    0.118    1   15    0
-     0.675    0.000    0.000    0.000    0   16    0
-     0.700    0.000    0.000    0.000    0   16    0
-     0.725    0.000    0.000    0.000    0   16    0
-     0.750    0.000    0.000    0.000    0   16    0
-     0.775    0.000    0.000    0.000    0   16    0
-     0.800    0.000    0.000    0.000    0   16    0
-     0.825    0.000    0.000    0.000    0   16    0
-     0.850    0.000    0.000    0.000    0   16    0
-     0.875    0.000    0.000    0.000    0   16    0
-     0.900    0.000    0.000    0.000    0   16    0
-     0.925    0.000    0.000    0.000    0   16    0
-     0.950    0.000    0.000    0.000    0   16    0
+     0.050    1.000    1.000    1.000   29    0    0
+     0.075    1.000    1.000    1.000   29    0    0
+     0.100    1.000    1.000    1.000   29    0    0
+     0.125    1.000    1.000    1.000   29    0    0
+     0.150    1.000    1.000    1.000   29    0    0
+     0.175    1.000    1.000    1.000   29    0    0
+     0.200    1.000    1.000    1.000   29    0    0
+     0.225    1.000    1.000    1.000   29    0    0
+     0.250    1.000    1.000    1.000   29    0    0
+     0.275    1.000    1.000    1.000   29    0    0
+     0.300    1.000    1.000    1.000   29    0    0
+     0.325    1.000    1.000    1.000   29    0    0
+     0.350    1.000    1.000    1.000   29    0    0
+     0.375    1.000    1.000    1.000   29    0    0
+     0.400    1.000    1.000    1.000   29    0    0
+     0.425    1.000    1.000    1.000   29    0    0
+     0.450    1.000    1.000    1.000   29    0    0
+     0.475    1.000    1.000    1.000   29    0    0
+     0.500    1.000    1.000    1.000   29    0    0
+     0.525    1.000    1.000    1.000   29    0    0
+     0.550    1.000    1.000    1.000   29    0    0
+     0.575    1.000    1.000    1.000   29    0    0
+     0.600    1.000    1.000    1.000   29    0    0
+     0.625    1.000    1.000    1.000   29    0    0
+     0.650    1.000    1.000    1.000   29    0    0
+     0.675    1.000    1.000    1.000   29    0    0
+     0.700    1.000    1.000    1.000   29    0    0
+     0.725    1.000    1.000    1.000   29    0    0
+     0.750    1.000    1.000    1.000   29    0    0
+     0.775    1.000    1.000    1.000   29    0    0
+     0.800    1.000    1.000    1.000   29    0    0
+     0.825    1.000    1.000    1.000   29    0    0
+     0.850    1.000    1.000    1.000   29    0    0
+     0.875    1.000    1.000    1.000   29    0    0
+     0.900    1.000    1.000    1.000   29    0    0
+     0.925    1.000    1.000    1.000   29    0    0
+     0.950    1.000    1.000    1.000   29    0    0
 
-  [Selected] Thresh=0.450 | Recall=1.000 | Prec=0.696 | F1=0.821
-  Strategy: recall≥0.95 (precision relaxed)
-  Fold 5: acc=0.991 | sev_recall=1.000 | sev_prec=0.696 | mild_recall=0.462
+  [Selected] Thresh=0.050 | Recall=1.000 | Prec=1.000 | F1=1.000
+  Strategy: recall≥0.95 AND prec≥0.7
+  Fold 5: acc=0.990 | sev_recall=1.000 | sev_prec=1.000 | mild_recall=0.992
 
 CV Summary (mean ± std over 5 folds):
-  accuracy: 0.991 ± 0.004
+  accuracy: 0.989 ± 0.002
   sev_recall: 1.000 ± 0.000
-  sev_precision: 0.712 ± 0.106
-  mild_recall: 0.503 ± 0.206
+  sev_precision: 1.000 ± 0.000
+  mild_recall: 0.994 ± 0.003
 
 Generating Figure 5: CV fold performance...
   Saved plot: C:\Users\hp\Desktop\fog-edge\fog-edge\training\artifacts\plots\fig5_cv_fold_performance.png
@@ -309,250 +309,264 @@ Final Model Training
 ============================================================
   Oversampling Stage 1...
   Oversampled (SMOTE):
-    Class 0: 3142 samples
-    Class 1: 3142 samples
+    Class 0: 2664 samples
+    Class 1: 2664 samples
 Epoch 1/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 3s 6ms/step - accuracy: 0.8495 - loss: 0.1301 - val_accuracy: 0.9965 - val_loss: 0.0358 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 2s 4ms/step - accuracy: 0.7686 - loss: 0.1506 - val_accuracy: 0.9508 - val_loss: 0.0609 - learning_rate: 0.0010
 Epoch 2/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 0.9830 - loss: 0.0217 - val_accuracy: 0.9983 - val_loss: 0.0232 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9035 - loss: 0.0769 - val_accuracy: 0.9643 - val_loss: 0.0344 - learning_rate: 0.0010
 Epoch 3/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9912 - loss: 0.0136 - val_accuracy: 0.9983 - val_loss: 0.0149 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9352 - loss: 0.0513 - val_accuracy: 0.9711 - val_loss: 0.0241 - learning_rate: 0.0010
 Epoch 4/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9957 - loss: 0.0102 - val_accuracy: 0.9983 - val_loss: 0.0154 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9493 - loss: 0.0421 - val_accuracy: 0.9745 - val_loss: 0.0188 - learning_rate: 0.0010
 Epoch 5/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9960 - loss: 0.0090 - val_accuracy: 0.9983 - val_loss: 0.0092 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9574 - loss: 0.0364 - val_accuracy: 0.9847 - val_loss: 0.0152 - learning_rate: 0.0010
 Epoch 6/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 8ms/step - accuracy: 0.9973 - loss: 0.0084 - val_accuracy: 1.0000 - val_loss: 0.0051 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9675 - loss: 0.0321 - val_accuracy: 0.9847 - val_loss: 0.0151 - learning_rate: 0.0010
 Epoch 7/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 3s 8ms/step - accuracy: 0.9976 - loss: 0.0070 - val_accuracy: 1.0000 - val_loss: 0.0050 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9709 - loss: 0.0277 - val_accuracy: 0.9847 - val_loss: 0.0143 - learning_rate: 0.0010
 Epoch 8/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 6ms/step - accuracy: 0.9976 - loss: 0.0069 - val_accuracy: 1.0000 - val_loss: 0.0049 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9730 - loss: 0.0255 - val_accuracy: 0.9864 - val_loss: 0.0123 - learning_rate: 0.0010
 Epoch 9/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9986 - loss: 0.0062 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9775 - loss: 0.0226 - val_accuracy: 0.9847 - val_loss: 0.0145 - learning_rate: 0.0010
 Epoch 10/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9978 - loss: 0.0063 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9748 - loss: 0.0221 - val_accuracy: 0.9864 - val_loss: 0.0123 - learning_rate: 0.0010
 Epoch 11/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9990 - loss: 0.0059 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9792 - loss: 0.0196 - val_accuracy: 0.9881 - val_loss: 0.0127 - learning_rate: 0.0010
 Epoch 12/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9984 - loss: 0.0058 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9797 - loss: 0.0203 - val_accuracy: 0.9847 - val_loss: 0.0127 - learning_rate: 0.0010
 Epoch 13/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9989 - loss: 0.0057 - val_accuracy: 1.0000 - val_loss: 0.0045 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9816 - loss: 0.0183 - val_accuracy: 0.9864 - val_loss: 0.0114 - learning_rate: 0.0010
 Epoch 14/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9989 - loss: 0.0051 - val_accuracy: 1.0000 - val_loss: 0.0044 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9846 - loss: 0.0169 - val_accuracy: 0.9881 - val_loss: 0.0096 - learning_rate: 0.0010
 Epoch 15/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9995 - loss: 0.0047 - val_accuracy: 1.0000 - val_loss: 0.0042 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9854 - loss: 0.0158 - val_accuracy: 0.9864 - val_loss: 0.0124 - learning_rate: 0.0010
 Epoch 16/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9990 - loss: 0.0049 - val_accuracy: 1.0000 - val_loss: 0.0041 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9863 - loss: 0.0165 - val_accuracy: 0.9864 - val_loss: 0.0120 - learning_rate: 0.0010
 Epoch 17/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9997 - loss: 0.0044 - val_accuracy: 1.0000 - val_loss: 0.0040 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9865 - loss: 0.0155 - val_accuracy: 0.9881 - val_loss: 0.0113 - learning_rate: 0.0010
 Epoch 18/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9987 - loss: 0.0048 - val_accuracy: 1.0000 - val_loss: 0.0039 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9861 - loss: 0.0148 - val_accuracy: 0.9864 - val_loss: 0.0115 - learning_rate: 0.0010
 Epoch 19/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9994 - loss: 0.0042 - val_accuracy: 1.0000 - val_loss: 0.0038 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9872 - loss: 0.0146 - val_accuracy: 0.9847 - val_loss: 0.0127 - learning_rate: 0.0010
 Epoch 20/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9994 - loss: 0.0040 - val_accuracy: 1.0000 - val_loss: 0.0036 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9893 - loss: 0.0133 - val_accuracy: 0.9881 - val_loss: 0.0123 - learning_rate: 5.0000e-04
 Epoch 21/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9997 - loss: 0.0039 - val_accuracy: 1.0000 - val_loss: 0.0035 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9878 - loss: 0.0137 - val_accuracy: 0.9813 - val_loss: 0.0133 - learning_rate: 5.0000e-04
 Epoch 22/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0036 - val_accuracy: 1.0000 - val_loss: 0.0033 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9878 - loss: 0.0128 - val_accuracy: 0.9813 - val_loss: 0.0126 - learning_rate: 5.0000e-04
 Epoch 23/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 0.0034 - val_accuracy: 1.0000 - val_loss: 0.0032 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9878 - loss: 0.0139 - val_accuracy: 0.9847 - val_loss: 0.0126 - learning_rate: 5.0000e-04
 Epoch 24/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9990 - loss: 0.0035 - val_accuracy: 1.0000 - val_loss: 0.0031 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9889 - loss: 0.0122 - val_accuracy: 0.9881 - val_loss: 0.0115 - learning_rate: 5.0000e-04
 Epoch 25/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 0.0031 - val_accuracy: 1.0000 - val_loss: 0.0029 - learning_rate: 0.0010
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9902 - loss: 0.0121 - val_accuracy: 0.9830 - val_loss: 0.0119 - learning_rate: 2.5000e-04
 Epoch 26/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0030 - val_accuracy: 1.0000 - val_loss: 0.0028 - learning_rate: 0.0010
-Epoch 27/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9997 - loss: 0.0029 - val_accuracy: 1.0000 - val_loss: 0.0026 - learning_rate: 0.0010
-Epoch 28/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9995 - loss: 0.0029 - val_accuracy: 1.0000 - val_loss: 0.0025 - learning_rate: 0.0010
-Epoch 29/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9994 - loss: 0.0029 - val_accuracy: 1.0000 - val_loss: 0.0024 - learning_rate: 0.0010
-Epoch 30/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 0.9995 - loss: 0.0026 - val_accuracy: 1.0000 - val_loss: 0.0023 - learning_rate: 0.0010
-Epoch 31/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 0.0023 - val_accuracy: 1.0000 - val_loss: 0.0021 - learning_rate: 0.0010
-Epoch 32/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0021 - val_accuracy: 1.0000 - val_loss: 0.0020 - learning_rate: 0.0010
-Epoch 33/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 0.0021 - val_accuracy: 1.0000 - val_loss: 0.0019 - learning_rate: 0.0010
-Epoch 34/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 0.0020 - val_accuracy: 1.0000 - val_loss: 0.0018 - learning_rate: 0.0010
-Epoch 35/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9997 - loss: 0.0020 - val_accuracy: 1.0000 - val_loss: 0.0017 - learning_rate: 0.0010
-Epoch 36/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9995 - loss: 0.0027 - val_accuracy: 1.0000 - val_loss: 0.0016 - learning_rate: 0.0010
-Epoch 37/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0017 - val_accuracy: 1.0000 - val_loss: 0.0015 - learning_rate: 0.0010
-Epoch 38/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0016 - val_accuracy: 1.0000 - val_loss: 0.0015 - learning_rate: 0.0010
-Epoch 39/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0015 - val_accuracy: 1.0000 - val_loss: 0.0014 - learning_rate: 0.0010
-Epoch 40/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 0.0014 - val_accuracy: 1.0000 - val_loss: 0.0013 - learning_rate: 0.0010
-Epoch 41/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 0.0013 - val_accuracy: 1.0000 - val_loss: 0.0012 - learning_rate: 0.0010
-Epoch 42/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9995 - loss: 0.0015 - val_accuracy: 1.0000 - val_loss: 0.0011 - learning_rate: 0.0010
-Epoch 43/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9997 - loss: 0.0015 - val_accuracy: 1.0000 - val_loss: 0.0011 - learning_rate: 0.0010
-Epoch 44/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 0.0011 - learning_rate: 0.0010
-Epoch 45/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 0.0011 - val_accuracy: 1.0000 - val_loss: 0.0010 - learning_rate: 0.0010
-Epoch 46/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9995 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 9.9909e-04 - learning_rate: 0.0010
-Epoch 47/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9995 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 9.6676e-04 - learning_rate: 0.0010
-Epoch 48/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9995 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 9.6096e-04 - learning_rate: 0.0010
-Epoch 49/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9997 - loss: 0.0011 - val_accuracy: 1.0000 - val_loss: 9.2318e-04 - learning_rate: 0.0010
-Epoch 50/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 9.8976e-04 - val_accuracy: 1.0000 - val_loss: 8.9070e-04 - learning_rate: 0.0010
-Epoch 51/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 9.0318e-04 - val_accuracy: 1.0000 - val_loss: 8.4546e-04 - learning_rate: 0.0010
-Epoch 52/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 9.0331e-04 - val_accuracy: 1.0000 - val_loss: 8.1353e-04 - learning_rate: 0.0010
-Epoch 53/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9995 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 8.0132e-04 - learning_rate: 0.0010
-Epoch 54/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 9ms/step - accuracy: 0.9998 - loss: 9.7163e-04 - val_accuracy: 1.0000 - val_loss: 7.7503e-04 - learning_rate: 0.0010
-Epoch 55/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 7.6960e-04 - val_accuracy: 1.0000 - val_loss: 7.3436e-04 - learning_rate: 0.0010
-Epoch 56/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 8.0921e-04 - val_accuracy: 1.0000 - val_loss: 7.0287e-04 - learning_rate: 0.0010
-Epoch 57/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 7.2227e-04 - val_accuracy: 1.0000 - val_loss: 6.6558e-04 - learning_rate: 0.0010
-Epoch 58/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 6.7108e-04 - val_accuracy: 1.0000 - val_loss: 6.3204e-04 - learning_rate: 0.0010
-Epoch 59/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 0.9994 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 6.7440e-04 - learning_rate: 0.0010
-Epoch 60/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 6.8796e-04 - val_accuracy: 1.0000 - val_loss: 6.4056e-04 - learning_rate: 0.0010
-Epoch 61/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 6.4793e-04 - val_accuracy: 1.0000 - val_loss: 6.0693e-04 - learning_rate: 0.0010
-Epoch 62/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9997 - loss: 0.0012 - val_accuracy: 1.0000 - val_loss: 6.0356e-04 - learning_rate: 0.0010
-Epoch 63/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 6.1021e-04 - val_accuracy: 1.0000 - val_loss: 5.7149e-04 - learning_rate: 0.0010
-Epoch 64/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9997 - loss: 7.7494e-04 - val_accuracy: 1.0000 - val_loss: 5.6185e-04 - learning_rate: 5.0000e-04
-Epoch 65/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 5.8510e-04 - val_accuracy: 1.0000 - val_loss: 5.4634e-04 - learning_rate: 5.0000e-04
-Epoch 66/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 5.5231e-04 - val_accuracy: 1.0000 - val_loss: 5.3149e-04 - learning_rate: 5.0000e-04
-Epoch 67/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 5.4922e-04 - val_accuracy: 1.0000 - val_loss: 5.1364e-04 - learning_rate: 5.0000e-04
-Epoch 68/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 5.1197e-04 - val_accuracy: 1.0000 - val_loss: 4.9608e-04 - learning_rate: 5.0000e-04
-Epoch 69/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 1.0000 - loss: 4.9330e-04 - val_accuracy: 1.0000 - val_loss: 4.7778e-04 - learning_rate: 5.0000e-04
-Epoch 70/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 0.9998 - loss: 5.1984e-04 - val_accuracy: 1.0000 - val_loss: 4.6149e-04 - learning_rate: 5.0000e-04
-Epoch 71/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 6.4293e-04 - val_accuracy: 1.0000 - val_loss: 4.5228e-04 - learning_rate: 5.0000e-04
-Epoch 72/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 1.0000 - loss: 4.9837e-04 - val_accuracy: 1.0000 - val_loss: 4.4709e-04 - learning_rate: 2.5000e-04
-Epoch 73/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 7ms/step - accuracy: 1.0000 - loss: 4.4840e-04 - val_accuracy: 1.0000 - val_loss: 4.3911e-04 - learning_rate: 2.5000e-04
-Epoch 74/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 0.9998 - loss: 5.8982e-04 - val_accuracy: 1.0000 - val_loss: 4.3143e-04 - learning_rate: 2.5000e-04
-Epoch 75/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 7ms/step - accuracy: 1.0000 - loss: 4.3878e-04 - val_accuracy: 1.0000 - val_loss: 4.2281e-04 - learning_rate: 2.5000e-04
-Epoch 76/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 3ms/step - accuracy: 1.0000 - loss: 4.2585e-04 - val_accuracy: 1.0000 - val_loss: 4.1383e-04 - learning_rate: 2.5000e-04
-Epoch 77/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 4.7325e-04 - val_accuracy: 1.0000 - val_loss: 4.0556e-04 - learning_rate: 2.5000e-04
-Epoch 78/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 4.8786e-04 - val_accuracy: 1.0000 - val_loss: 3.9952e-04 - learning_rate: 2.5000e-04
-Epoch 79/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 4.1350e-04 - val_accuracy: 1.0000 - val_loss: 3.9091e-04 - learning_rate: 2.5000e-04
-Epoch 80/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 4.0284e-04 - val_accuracy: 1.0000 - val_loss: 3.8620e-04 - learning_rate: 1.2500e-04
-Epoch 81/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 0.9998 - loss: 4.3445e-04 - val_accuracy: 1.0000 - val_loss: 3.8170e-04 - learning_rate: 1.2500e-04
-Epoch 82/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 4.0078e-04 - val_accuracy: 1.0000 - val_loss: 3.7744e-04 - learning_rate: 1.2500e-04
-Epoch 83/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.8498e-04 - val_accuracy: 1.0000 - val_loss: 3.7245e-04 - learning_rate: 1.2500e-04
-Epoch 84/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.7745e-04 - val_accuracy: 1.0000 - val_loss: 3.6703e-04 - learning_rate: 1.2500e-04
-Epoch 85/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 5ms/step - accuracy: 1.0000 - loss: 3.6921e-04 - val_accuracy: 1.0000 - val_loss: 3.6412e-04 - learning_rate: 6.2500e-05
-Epoch 86/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9998 - loss: 4.2990e-04 - val_accuracy: 1.0000 - val_loss: 3.6084e-04 - learning_rate: 6.2500e-05
-Epoch 87/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 5ms/step - accuracy: 1.0000 - loss: 3.6275e-04 - val_accuracy: 1.0000 - val_loss: 3.5806e-04 - learning_rate: 6.2500e-05
-Epoch 88/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.6645e-04 - val_accuracy: 1.0000 - val_loss: 3.5518e-04 - learning_rate: 6.2500e-05
-Epoch 89/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 3.5830e-04 - val_accuracy: 1.0000 - val_loss: 3.5200e-04 - learning_rate: 6.2500e-05
-Epoch 90/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.6609e-04 - val_accuracy: 1.0000 - val_loss: 3.5019e-04 - learning_rate: 3.1250e-05
-Epoch 91/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.5278e-04 - val_accuracy: 1.0000 - val_loss: 3.4832e-04 - learning_rate: 3.1250e-05
-Epoch 92/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.5314e-04 - val_accuracy: 1.0000 - val_loss: 3.4628e-04 - learning_rate: 3.1250e-05
-Epoch 93/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.5776e-04 - val_accuracy: 1.0000 - val_loss: 3.4407e-04 - learning_rate: 3.1250e-05
-Epoch 94/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.7774e-04 - val_accuracy: 1.0000 - val_loss: 3.4193e-04 - learning_rate: 3.1250e-05
-Epoch 95/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 5ms/step - accuracy: 1.0000 - loss: 3.5169e-04 - val_accuracy: 1.0000 - val_loss: 3.4085e-04 - learning_rate: 1.5625e-05
-Epoch 96/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 1.0000 - loss: 3.6311e-04 - val_accuracy: 1.0000 - val_loss: 3.3969e-04 - learning_rate: 1.5625e-05
-Epoch 97/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 2s 6ms/step - accuracy: 1.0000 - loss: 3.4290e-04 - val_accuracy: 1.0000 - val_loss: 3.3850e-04 - learning_rate: 1.5625e-05
-Epoch 98/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 5ms/step - accuracy: 1.0000 - loss: 3.4088e-04 - val_accuracy: 1.0000 - val_loss: 3.3719e-04 - learning_rate: 1.5625e-05
-Epoch 99/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.4532e-04 - val_accuracy: 1.0000 - val_loss: 3.3578e-04 - learning_rate: 1.5625e-05
-Epoch 100/100
-197/197 ━━━━━━━━━━━━━━━━━━━━ 1s 3ms/step - accuracy: 1.0000 - loss: 3.3740e-04 - val_accuracy: 1.0000 - val_loss: 3.3503e-04 - learning_rate: 7.8125e-06
+167/167 ━━━━━━━━━━━━━━━━━━━━ 1s 2ms/step - accuracy: 0.9897 - loss: 0.0118 - val_accuracy: 0.9830 - val_loss: 0.0121 - learning_rate: 2.5000e-04
   Oversampling Stage 2...
   Oversampled (SMOTE):
-    Class 0: 66 samples
-    Class 1: 66 samples
+    Class 0: 547 samples
+    Class 1: 547 samples
 Epoch 1/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 2s 48ms/step - accuracy: 0.5000 - loss: 0.7587 - val_accuracy: 0.5455 - val_loss: 0.5561 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 2s 5ms/step - accuracy: 0.6133 - loss: 0.2838 - val_accuracy: 0.7712 - val_loss: 0.1267 - learning_rate: 0.0010
 Epoch 2/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.5909 - loss: 0.5971 - val_accuracy: 0.5455 - val_loss: 0.5464 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.8263 - loss: 0.1194 - val_accuracy: 0.7712 - val_loss: 0.1083 - learning_rate: 0.0010
 Epoch 3/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.5758 - loss: 0.5137 - val_accuracy: 0.5455 - val_loss: 0.5344 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step - accuracy: 0.8821 - loss: 0.0839 - val_accuracy: 0.8136 - val_loss: 0.0861 - learning_rate: 0.0010
 Epoch 4/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.5758 - loss: 0.4228 - val_accuracy: 0.5455 - val_loss: 0.5335 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 1s 4ms/step - accuracy: 0.9141 - loss: 0.0667 - val_accuracy: 0.9068 - val_loss: 0.0576 - learning_rate: 0.0010
 Epoch 5/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - accuracy: 0.5455 - loss: 0.4214 - val_accuracy: 0.6364 - val_loss: 0.5239 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9406 - loss: 0.0527 - val_accuracy: 0.9407 - val_loss: 0.0395 - learning_rate: 0.0010
 Epoch 6/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 13ms/step - accuracy: 0.6439 - loss: 0.3698 - val_accuracy: 0.6364 - val_loss: 0.5155 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9470 - loss: 0.0451 - val_accuracy: 0.9407 - val_loss: 0.0308 - learning_rate: 0.0010
 Epoch 7/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 19ms/step - accuracy: 0.6515 - loss: 0.3599 - val_accuracy: 0.6818 - val_loss: 0.5074 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9534 - loss: 0.0344 - val_accuracy: 0.9831 - val_loss: 0.0221 - learning_rate: 0.0010
 Epoch 8/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - accuracy: 0.6591 - loss: 0.2641 - val_accuracy: 0.6364 - val_loss: 0.5093 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9689 - loss: 0.0326 - val_accuracy: 0.9915 - val_loss: 0.0164 - learning_rate: 0.0010
 Epoch 9/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - accuracy: 0.6894 - loss: 0.2631 - val_accuracy: 0.5909 - val_loss: 0.5177 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9698 - loss: 0.0252 - val_accuracy: 0.9915 - val_loss: 0.0107 - learning_rate: 0.0010
 Epoch 10/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 10ms/step - accuracy: 0.7121 - loss: 0.3278 - val_accuracy: 0.5909 - val_loss: 0.5236 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9717 - loss: 0.0242 - val_accuracy: 0.9915 - val_loss: 0.0102 - learning_rate: 0.0010
 Epoch 11/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - accuracy: 0.6818 - loss: 0.2943 - val_accuracy: 0.6364 - val_loss: 0.5306 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9753 - loss: 0.0220 - val_accuracy: 0.9915 - val_loss: 0.0090 - learning_rate: 0.0010
 Epoch 12/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 10ms/step - accuracy: 0.7045 - loss: 0.2968 - val_accuracy: 0.6364 - val_loss: 0.5551 - learning_rate: 0.0010
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9845 - loss: 0.0211 - val_accuracy: 0.9915 - val_loss: 0.0088 - learning_rate: 0.0010
 Epoch 13/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 12ms/step - accuracy: 0.7424 - loss: 0.2095 - val_accuracy: 0.6364 - val_loss: 0.5657 - learning_rate: 5.0000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9799 - loss: 0.0192 - val_accuracy: 0.9915 - val_loss: 0.0071 - learning_rate: 0.0010
 Epoch 14/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 16ms/step - accuracy: 0.7197 - loss: 0.2074 - val_accuracy: 0.6364 - val_loss: 0.5670 - learning_rate: 5.0000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9899 - loss: 0.0142 - val_accuracy: 1.0000 - val_loss: 0.0064 - learning_rate: 0.0010
 Epoch 15/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - accuracy: 0.7424 - loss: 0.2241 - val_accuracy: 0.6364 - val_loss: 0.5706 - learning_rate: 5.0000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9835 - loss: 0.0217 - val_accuracy: 1.0000 - val_loss: 0.0058 - learning_rate: 0.0010
 Epoch 16/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 10ms/step - accuracy: 0.7576 - loss: 0.1972 - val_accuracy: 0.6364 - val_loss: 0.5695 - learning_rate: 5.0000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9909 - loss: 0.0146 - val_accuracy: 1.0000 - val_loss: 0.0058 - learning_rate: 0.0010
 Epoch 17/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 9ms/step - accuracy: 0.7348 - loss: 0.1878 - val_accuracy: 0.6364 - val_loss: 0.5816 - learning_rate: 5.0000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9854 - loss: 0.0148 - val_accuracy: 1.0000 - val_loss: 0.0057 - learning_rate: 0.0010
 Epoch 18/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 11ms/step - accuracy: 0.6894 - loss: 0.2200 - val_accuracy: 0.6364 - val_loss: 0.5751 - learning_rate: 2.5000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0110 - val_accuracy: 1.0000 - val_loss: 0.0054 - learning_rate: 0.0010
 Epoch 19/100
-9/9 ━━━━━━━━━━━━━━━━━━━━ 0s 10ms/step - accuracy: 0.6970 - loss: 0.2513 - val_accuracy: 0.6364 - val_loss: 0.5706 - learning_rate: 2.5000e-04
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9909 - loss: 0.0110 - val_accuracy: 1.0000 - val_loss: 0.0053 - learning_rate: 0.0010
+Epoch 20/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0088 - val_accuracy: 1.0000 - val_loss: 0.0052 - learning_rate: 0.0010
+Epoch 21/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9954 - loss: 0.0104 - val_accuracy: 1.0000 - val_loss: 0.0051 - learning_rate: 0.0010
+Epoch 22/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9909 - loss: 0.0140 - val_accuracy: 1.0000 - val_loss: 0.0051 - learning_rate: 0.0010
+Epoch 23/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 2ms/step - accuracy: 0.9899 - loss: 0.0139 - val_accuracy: 1.0000 - val_loss: 0.0053 - learning_rate: 0.0010
+Epoch 24/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9909 - loss: 0.0108 - val_accuracy: 1.0000 - val_loss: 0.0054 - learning_rate: 0.0010
+Epoch 25/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0117 - val_accuracy: 1.0000 - val_loss: 0.0051 - learning_rate: 0.0010
+Epoch 26/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0078 - val_accuracy: 1.0000 - val_loss: 0.0050 - learning_rate: 0.0010
+Epoch 27/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0103 - val_accuracy: 1.0000 - val_loss: 0.0049 - learning_rate: 0.0010
+Epoch 28/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9936 - loss: 0.0083 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+Epoch 29/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0109 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+Epoch 30/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0082 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+Epoch 31/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9927 - loss: 0.0089 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+Epoch 32/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9936 - loss: 0.0082 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+Epoch 33/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0074 - val_accuracy: 1.0000 - val_loss: 0.0048 - learning_rate: 0.0010
+Epoch 34/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0071 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 35/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0088 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 36/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9936 - loss: 0.0079 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 37/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0071 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 38/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0070 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 39/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0075 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 40/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0083 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 5.0000e-04
+Epoch 41/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9954 - loss: 0.0080 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 2.5000e-04
+Epoch 42/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0077 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 2.5000e-04
+Epoch 43/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0080 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 2.5000e-04
+Epoch 44/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0071 - val_accuracy: 1.0000 - val_loss: 0.0047 - learning_rate: 2.5000e-04
+Epoch 45/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0090 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 2.5000e-04
+Epoch 46/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0058 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.2500e-04
+Epoch 47/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0085 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.2500e-04
+Epoch 48/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0097 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.2500e-04
+Epoch 49/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 1.0000 - loss: 0.0059 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.2500e-04
+Epoch 50/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0067 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.2500e-04
+Epoch 51/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 5ms/step - accuracy: 0.9963 - loss: 0.0065 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 6.2500e-05
+Epoch 52/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0074 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 6.2500e-05
+Epoch 53/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0076 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 6.2500e-05
+Epoch 54/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0077 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 6.2500e-05
+Epoch 55/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0063 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 6.2500e-05
+Epoch 56/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0071 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 6.2500e-05
+Epoch 57/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0063 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.1250e-05
+Epoch 58/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0075 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.1250e-05
+Epoch 59/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0059 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.1250e-05
+Epoch 60/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0065 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.1250e-05
+Epoch 61/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0073 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.1250e-05
+Epoch 62/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0066 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.5625e-05
+Epoch 63/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0059 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.5625e-05
+Epoch 64/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0062 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.5625e-05
+Epoch 65/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0065 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.5625e-05
+Epoch 66/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0064 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.5625e-05
+Epoch 67/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0058 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 7.8125e-06
+Epoch 68/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0075 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 7.8125e-06
+Epoch 69/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9927 - loss: 0.0089 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 7.8125e-06
+Epoch 70/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0063 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 7.8125e-06
+Epoch 71/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9918 - loss: 0.0093 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 7.8125e-06
+Epoch 72/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0060 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.9063e-06
+Epoch 73/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0079 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.9063e-06
+Epoch 74/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9927 - loss: 0.0116 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.9063e-06
+Epoch 75/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0067 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.9063e-06
+Epoch 76/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0079 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 3.9063e-06
+Epoch 77/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0069 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.9531e-06
+Epoch 78/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0059 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.9531e-06
+Epoch 79/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9991 - loss: 0.0071 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.9531e-06
+Epoch 80/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9954 - loss: 0.0072 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.9531e-06
+Epoch 81/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9936 - loss: 0.0080 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.9531e-06
+Epoch 82/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 1.0000 - loss: 0.0057 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 83/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0070 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 84/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 4ms/step - accuracy: 0.9973 - loss: 0.0074 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 85/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9945 - loss: 0.0083 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 86/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0074 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 87/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0077 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 88/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0071 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 89/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0080 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 90/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9982 - loss: 0.0066 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 91/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9936 - loss: 0.0080 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 92/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0066 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 93/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0073 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 94/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9954 - loss: 0.0079 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 95/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0073 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 96/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0069 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 97/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0064 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 98/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9963 - loss: 0.0072 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 99/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0079 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
+Epoch 100/100
+69/69 ━━━━━━━━━━━━━━━━━━━━ 0s 3ms/step - accuracy: 0.9973 - loss: 0.0066 - val_accuracy: 1.0000 - val_loss: 0.0046 - learning_rate: 1.0000e-06
 
 Generating Figure 2: Stage 1 training curves...
   Saved plot: C:\Users\hp\Desktop\fog-edge\fog-edge\training\artifacts\plots\fig2_stage1_training_curves.png
@@ -561,144 +575,144 @@ Generating Figure 3: Stage 2 training curves...
 
   Stage2 threshold sweep (recall≥0.95, prec≥0.7):
     Thresh   Recall     Prec       F1   TP   FN   FP
-     0.050    1.000    0.545    0.706   12    0   10
-     0.075    1.000    0.545    0.706   12    0   10
-     0.100    1.000    0.545    0.706   12    0   10
-     0.125    1.000    0.545    0.706   12    0   10
-     0.150    1.000    0.545    0.706   12    0   10
-     0.175    1.000    0.545    0.706   12    0   10
-     0.200    1.000    0.545    0.706   12    0   10
-     0.225    1.000    0.545    0.706   12    0   10
-     0.250    1.000    0.545    0.706   12    0   10
-     0.275    1.000    0.545    0.706   12    0   10
-     0.300    1.000    0.545    0.706   12    0   10
-     0.325    1.000    0.545    0.706   12    0   10
-     0.350    1.000    0.545    0.706   12    0   10
-     0.375    1.000    0.545    0.706   12    0   10
-     0.400    1.000    0.545    0.706   12    0   10
-     0.425    1.000    0.545    0.706   12    0   10
-     0.450    1.000    0.571    0.727   12    0    9
-     0.475    1.000    0.632    0.774   12    0    7
-     0.500    1.000    0.632    0.774   12    0    7
-     0.525    0.833    0.588    0.690   10    2    7
-     0.550    0.833    0.625    0.714   10    2    6
-     0.575    0.833    0.625    0.714   10    2    6
-     0.600    0.833    0.625    0.714   10    2    6
-     0.625    0.833    0.625    0.714   10    2    6
-     0.650    0.833    0.625    0.714   10    2    6
-     0.675    0.750    0.600    0.667    9    3    6
-     0.700    0.750    0.600    0.667    9    3    6
-     0.725    0.750    0.643    0.692    9    3    5
-     0.750    0.667    0.615    0.640    8    4    5
-     0.775    0.667    0.667    0.667    8    4    4
-     0.800    0.667    0.727    0.696    8    4    3
-     0.825    0.500    0.667    0.571    6    6    3
-     0.850    0.417    0.714    0.526    5    7    2
-     0.875    0.083    0.333    0.133    1   11    2
-     0.900    0.083    0.333    0.133    1   11    2
-     0.925    0.083    0.333    0.133    1   11    2
-     0.950    0.000    0.000    0.000    0   12    2
+     0.050    1.000    0.913    0.955   21    0    2
+     0.075    1.000    0.955    0.977   21    0    1
+     0.100    1.000    1.000    1.000   21    0    0
+     0.125    1.000    1.000    1.000   21    0    0
+     0.150    1.000    1.000    1.000   21    0    0
+     0.175    1.000    1.000    1.000   21    0    0
+     0.200    1.000    1.000    1.000   21    0    0
+     0.225    1.000    1.000    1.000   21    0    0
+     0.250    1.000    1.000    1.000   21    0    0
+     0.275    1.000    1.000    1.000   21    0    0
+     0.300    1.000    1.000    1.000   21    0    0
+     0.325    1.000    1.000    1.000   21    0    0
+     0.350    1.000    1.000    1.000   21    0    0
+     0.375    1.000    1.000    1.000   21    0    0
+     0.400    1.000    1.000    1.000   21    0    0
+     0.425    1.000    1.000    1.000   21    0    0
+     0.450    1.000    1.000    1.000   21    0    0
+     0.475    1.000    1.000    1.000   21    0    0
+     0.500    1.000    1.000    1.000   21    0    0
+     0.525    1.000    1.000    1.000   21    0    0
+     0.550    1.000    1.000    1.000   21    0    0
+     0.575    1.000    1.000    1.000   21    0    0
+     0.600    1.000    1.000    1.000   21    0    0
+     0.625    1.000    1.000    1.000   21    0    0
+     0.650    1.000    1.000    1.000   21    0    0
+     0.675    1.000    1.000    1.000   21    0    0
+     0.700    1.000    1.000    1.000   21    0    0
+     0.725    1.000    1.000    1.000   21    0    0
+     0.750    1.000    1.000    1.000   21    0    0
+     0.775    1.000    1.000    1.000   21    0    0
+     0.800    1.000    1.000    1.000   21    0    0
+     0.825    1.000    1.000    1.000   21    0    0
+     0.850    1.000    1.000    1.000   21    0    0
+     0.875    1.000    1.000    1.000   21    0    0
+     0.900    1.000    1.000    1.000   21    0    0
+     0.925    1.000    1.000    1.000   21    0    0
+     0.950    1.000    1.000    1.000   21    0    0
 
-  [Selected] Thresh=0.475 | Recall=1.000 | Prec=0.632 | F1=0.774
-  Strategy: recall≥0.95 (precision relaxed)
+  [Selected] Thresh=0.100 | Recall=1.000 | Prec=1.000 | F1=1.000
+  Strategy: recall≥0.95 AND prec≥0.7
 
 ============================================================
 Evaluation on held-out test set
 ============================================================
 
-Stage1 threshold: 0.3  |  Stage2 threshold: 0.475
+Stage1 threshold: 0.3  |  Stage2 threshold: 0.100
 
 Classification Report (test set):
               precision    recall  f1-score   support
 
-  Normal (0)       1.00      1.00      1.00      1140
-    Mild (1)       1.00      0.10      0.17        21
-  Severe (2)       0.57      1.00      0.72        25
+  Normal (0)       1.00      0.95      0.97       844
+    Mild (1)       0.82      0.98      0.89       214
+  Severe (2)       0.96      1.00      0.98        47
 
-    accuracy                           0.98      1186
-   macro avg       0.86      0.70      0.63      1186
-weighted avg       0.99      0.98      0.98      1186
+    accuracy                           0.95      1105
+   macro avg       0.93      0.98      0.95      1105
+weighted avg       0.96      0.95      0.96      1105
 
 Confusion Matrix:
-[[1140    0    0]
- [   0    2   19]
- [   0    0   25]]
+[[798  46   0]
+ [  2 210   2]
+ [  0   0  47]]
 
 Converting to INT8 TFLite...
-Saved artifact at 'C:\Users\hp\AppData\Local\Temp\tmp46hk35iw'. The following endpoints are available:
+Saved artifact at 'C:\Users\hp\AppData\Local\Temp\tmprfd4cpon'. The following endpoints are available:
 
 * Endpoint 'serve'
   args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 29), dtype=tf.float32, name='keras_tensor_90')
 Output Type:
   TensorSpec(shape=(None, 2), dtype=tf.float32, name=None)
 Captures:
-  2021775780816: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775784656: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775782352: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775783504: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775781968: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775776400: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775783120: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775781200: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775783696: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775782544: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775784848: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775780240: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775785040: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775783888: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775782736: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021775782928: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062732944: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062733136: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062731792: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062731408: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062734864: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062734096: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062735248: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062731984: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062735440: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062731024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062732176: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062734672: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062734480: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062735056: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062733712: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062732752: TensorSpec(shape=(), dtype=tf.resource, name=None)
 C:\Users\hp\AppData\Roaming\Python\Python311\site-packages\tensorflow\lite\python\convert.py:863: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
   warnings.warn(
 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
-W0000 00:00:1772866051.909236   12368 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
-W0000 00:00:1772866051.910074   12368 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
-2026-03-07 12:17:31.923487: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: C:\Users\hp\AppData\Local\Temp\tmp46hk35iw
-2026-03-07 12:17:31.927382: I tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
-2026-03-07 12:17:31.927489: I tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: C:\Users\hp\AppData\Local\Temp\tmp46hk35iw
-I0000 00:00:1772866051.941578   12368 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
-2026-03-07 12:17:31.944574: I tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
-2026-03-07 12:17:32.016718: I tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: C:\Users\hp\AppData\Local\Temp\tmp46hk35iw
-2026-03-07 12:17:32.032271: I tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 108982 microseconds.
-2026-03-07 12:17:32.107267: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
+W0000 00:00:1772881430.696514   22096 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1772881430.698072   22096 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+2026-03-07 16:33:50.702566: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: C:\Users\hp\AppData\Local\Temp\tmprfd4cpon
+2026-03-07 16:33:50.705054: I tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
+2026-03-07 16:33:50.708072: I tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: C:\Users\hp\AppData\Local\Temp\tmprfd4cpon
+I0000 00:00:1772881430.723393   22096 mlir_graph_optimization_pass.cc:437] MLIR V1 optimization pass is not enabled
+2026-03-07 16:33:50.725825: I tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
+2026-03-07 16:33:50.796573: I tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: C:\Users\hp\AppData\Local\Temp\tmprfd4cpon
+2026-03-07 16:33:50.812095: I tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 110026 microseconds.
+2026-03-07 16:33:50.874298: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:269] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_DIRECTORY` to enable.
 fully_quantize: 0, inference_type: 6, input_inference_type: INT8, output_inference_type: INT8
-2026-03-07 12:17:32.300045: W tensorflow/compiler/mlir/lite/flatbuffer_export.cc:3705] Skipping runtime version metadata in the model. This will be generated by the exporter.
+2026-03-07 16:33:51.238142: W tensorflow/compiler/mlir/lite/flatbuffer_export.cc:3705] Skipping runtime version metadata in the model. This will be generated by the exporter.
   stage1_normal_vs_abnormal: 6.38 KB → C:\Users\hp\Desktop\fog-edge\fog-edge\training\artifacts\stage1_normal_vs_abnormal_int8.tflite
-Saved artifact at 'C:\Users\hp\AppData\Local\Temp\tmpkh4osayr'. The following endpoints are available:
+Saved artifact at 'C:\Users\hp\AppData\Local\Temp\tmpj5w6un9q'. The following endpoints are available:
 
 * Endpoint 'serve'
   args_0 (POSITIONAL_ONLY): TensorSpec(shape=(None, 29), dtype=tf.float32, name='keras_tensor_99')
 Output Type:
   TensorSpec(shape=(None, 2), dtype=tf.float32, name=None)
 Captures:
-  2021775784464: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881170448: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881170256: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881168528: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881167952: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881168336: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881168720: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881171024: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881170832: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881169296: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881169104: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881171216: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881168912: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881169488: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881183888: TensorSpec(shape=(), dtype=tf.resource, name=None)
-  2021881177552: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062733328: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084062732560: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182325584: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182323472: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182323856: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182325200: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182323280: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182325776: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182339216: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182324240: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182324048: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182326352: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182325008: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182323664: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182339024: TensorSpec(shape=(), dtype=tf.resource, name=None)
+  3084182324432: TensorSpec(shape=(), dtype=tf.resource, name=None)
 C:\Users\hp\AppData\Roaming\Python\Python311\site-packages\tensorflow\lite\python\convert.py:863: UserWarning: Statistics for quantized inputs were expected, but not specified; continuing anyway.
   warnings.warn(
-W0000 00:00:1772866052.767844   12368 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
-W0000 00:00:1772866052.767959   12368 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
-2026-03-07 12:17:32.768508: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: C:\Users\hp\AppData\Local\Temp\tmpkh4osayr
-2026-03-07 12:17:32.769739: I tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
-2026-03-07 12:17:32.769848: I tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: C:\Users\hp\AppData\Local\Temp\tmpkh4osayr
-2026-03-07 12:17:32.784393: I tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
-2026-03-07 12:17:32.839209: I tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: C:\Users\hp\AppData\Local\Temp\tmpkh4osayr
-2026-03-07 12:17:32.854622: I tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 86116 microseconds.
+W0000 00:00:1772881431.722346   22096 tf_tfl_flatbuffer_helpers.cc:364] Ignored output_format.
+W0000 00:00:1772881431.722553   22096 tf_tfl_flatbuffer_helpers.cc:367] Ignored drop_control_dependency.
+2026-03-07 16:33:51.723259: I tensorflow/cc/saved_model/reader.cc:83] Reading SavedModel from: C:\Users\hp\AppData\Local\Temp\tmpj5w6un9q
+2026-03-07 16:33:51.724453: I tensorflow/cc/saved_model/reader.cc:52] Reading meta graph with tags { serve }
+2026-03-07 16:33:51.724519: I tensorflow/cc/saved_model/reader.cc:147] Reading SavedModel debug info (if present) from: C:\Users\hp\AppData\Local\Temp\tmpj5w6un9q
+2026-03-07 16:33:51.737880: I tensorflow/cc/saved_model/loader.cc:236] Restoring SavedModel bundle.
+2026-03-07 16:33:51.789680: I tensorflow/cc/saved_model/loader.cc:220] Running initialization op on SavedModel bundle at path: C:\Users\hp\AppData\Local\Temp\tmpj5w6un9q
+2026-03-07 16:33:51.806217: I tensorflow/cc/saved_model/loader.cc:471] SavedModel load for tags { serve }; Status: success: OK. Took 82959 microseconds.
 fully_quantize: 0, inference_type: 6, input_inference_type: INT8, output_inference_type: INT8
-2026-03-07 12:17:32.935144: W tensorflow/compiler/mlir/lite/flatbuffer_export.cc:3705] Skipping runtime version metadata in the model. This will be generated by the exporter.
+2026-03-07 16:33:51.930246: W tensorflow/compiler/mlir/lite/flatbuffer_export.cc:3705] Skipping runtime version metadata in the model. This will be generated by the exporter.
   stage2_mild_vs_severe: 6.33 KB → C:\Users\hp\Desktop\fog-edge\fog-edge\training\artifacts\stage2_mild_vs_severe_int8.tflite
 
 Validating INT8 two-stage pipeline...
@@ -713,13 +727,13 @@ INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 INT8 TFLite Classification Report (test set):
               precision    recall  f1-score   support
 
-  Normal (0)       1.00      1.00      1.00      1140
-    Mild (1)       1.00      0.10      0.17        21
-  Severe (2)       0.57      1.00      0.72        25
+  Normal (0)       1.00      0.95      0.98       844
+    Mild (1)       0.84      0.99      0.91       214
+  Severe (2)       0.98      1.00      0.99        47
 
-    accuracy                           0.98      1186
-   macro avg       0.86      0.70      0.63      1186
-weighted avg       0.99      0.98      0.98      1186
+    accuracy                           0.96      1105
+   macro avg       0.94      0.98      0.96      1105
+weighted avg       0.97      0.96      0.96      1105
 
 
 Generating Figure 4: confusion matrices...
@@ -734,88 +748,36 @@ FINAL SUMMARY
 ============================================================
 
   Cross-validation (5 folds on train set):
-    accuracy: 0.991 ± 0.004
+    accuracy: 0.989 ± 0.002
     sev_recall: 1.000 ± 0.000
-    sev_precision: 0.712 ± 0.106
-    mild_recall: 0.503 ± 0.206
+    sev_precision: 1.000 ± 0.000
+    mild_recall: 0.994 ± 0.003
 
   Held-out test set (Float32, two-stage):
-    Overall accuracy:  0.9840
-    Macro F1:          0.6328
+    Overall accuracy:  0.9548
+    Macro F1:          0.9479
     Severe recall:     1.0000
-    Severe precision:  0.5682
-    Mild recall:       0.0952
-    Normal recall:     1.0000
+    Severe precision:  0.9592
+    Mild recall:       0.9813
+    Normal recall:     0.9455
 
   INT8 TFLite (two-stage combined):
-    Accuracy:          0.9840
+    Accuracy:          0.9620
     Severe recall:     1.0000
-    Severe precision:  0.5682
+    Severe precision:  0.9792
     Stage1 size:       6.38 KB
     Stage2 size:       6.33 KB
     Total size:        12.70 KB
-    Combined latency:  70.903 ms
+    Combined latency:  132.795 ms
 
   NFR Compliance:
-    Accuracy ≥ 92%: 98.4%  ✓
+    Accuracy ≥ 92%: 95.5%  ✓
     Severe recall ≥ 95%: 100.0%  ✓
-    Severe precision ≥ 90%: 56.8%  ✗ (not met)
+    Severe precision ≥ 90%: 95.9%  ✓
     Total size ≤ 100 KB: 12.70 KB  ✓
-    Latency ≤ 50 ms: 70.9 ms  ✗ (not met)
+    Latency ≤ 50 ms: 132.8 ms  ✗ (not met)
 
   Plots saved to: C:\Users\hp\Desktop\fog-edge\fog-edge\training\artifacts\plots
 
 Training complete.
-PS C:\Users\hp\Desktop\fog-edge\fog-edge\training> git add .
-warning: in the working copy of 'training/artifacts/phase1_metrics.json', LF will be replaced by CRLF the next time Git touches it
-PS C:\Users\hp\Desktop\fog-edge\fog-edge\training> git commit -m "Improved model training process, with assets"
-Auto packing the repository for optimum performance.
-See "git help gc" for manual housekeeping.
-Enumerating objects: 18, done.
-Counting objects: 100% (18/18), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (18/18), done.
-Writing objects: 100% (18/18), done.
-Total 18 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-Checking connectivity: 12155, done.
-warning: There are too many unreachable loose objects; run 'git prune' to remove them.
-[main ed59403] Improved model training process, with assets
- 12 files changed, 816 insertions(+), 315 deletions(-)
- create mode 100644 training/__pycache__/train_tinyml_model.cpython-311.pyc
- create mode 100644 training/artifacts/plots/fig1_class_distribution.png
- create mode 100644 training/artifacts/plots/fig2_stage1_training_curves.png
- create mode 100644 training/artifacts/plots/fig3_stage2_training_curves.png
- create mode 100644 training/artifacts/plots/fig4_confusion_matrices.png
- create mode 100644 training/artifacts/plots/fig5_cv_fold_performance.png
- create mode 100644 training/artifacts/plots/fig4_confusion_matrices.png
- create mode 100644 training/artifacts/plots/fig5_cv_fold_performance.png
- create mode 100644 training/artifacts/plots/fig6_threshold_sweep.png
- create mode 100644 training/artifacts/plots/fig7_nfr_compliance.png
- create mode 100644 training/artifacts/stage1_normal_vs_abnormal_int8.tflite
- create mode 100644 training/artifacts/stage2_mild_vs_severe_int8.tflite
-PS C:\Users\hp\Desktop\fog-edge\fog-edge\training> git push origin main
-Enumerating objects: 22, done.
-Counting objects: 100% (22/22), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (18/18), done.
-Writing objects: 100% (18/18), 547.52 KiB | 78.22 MiB/s, done.
-Total 18 (delta 3), reused 15 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-To https://github.com/au-revoir777/Fog-Edge-Healthcare.git
-   2a6240d..ed59403  main -> main
-PS C:\Users\hp\Desktop\fog-edge\fog-edge\training>
-
- create mode 100644 training/artifacts/plots/fig6_threshold_sweep.png
- create mode 100644 training/artifacts/plots/fig7_nfr_compliance.png
- create mode 100644 training/artifacts/stage1_normal_vs_abnormal_int8.tflite
- create mode 100644 training/artifacts/stage2_mild_vs_severe_int8.tflite
-PS C:\Users\hp\Desktop\fog-edge\fog-edge\training> git push origin main
-Enumerating objects: 22, done.
-Counting objects: 100% (22/22), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (18/18), done.
-Writing objects: 100% (18/18), 547.52 KiB | 78.22 MiB/s, done.
-Total 18 (delta 3), reused 15 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
-To https://github.com/au-revoir777/Fog-Edge-Healthcare.git
-   2a6240d..ed59403  main -> main
+PS C:\Users\hp\Desktop\fog-edge\fog-edge\training> 
