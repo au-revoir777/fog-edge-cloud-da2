@@ -4,10 +4,11 @@ __pycache__/
 .env
 venv/
 training/__pycache__/                       
-artifacts/dataset_all.csv                 
-artifacts/respiratory_model.tflite         
-artifacts/tinyml_model_int8.tflite        
-artifacts/tinyml_metrics_extractor.py      
+training/artifacts/dataset_all.csv                 
+training/artifacts/respiratory_model.tflite         
+training/artifacts/tinyml_model_int8.tflite        
+training/artifacts/tinyml_metrics_extractor.py     
+training/diagnostics.py 
 
 docs/
 edge/
