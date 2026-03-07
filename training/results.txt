@@ -1,0 +1,1396 @@
+393.0 Starting Mobility Management for wearable_3
+394.0 Starting Mobility Management for wearable_2
+394.0 Starting Mobility Management for wearable_4
+395.0 Starting Mobility Management for wearable_1
+396.0 Starting Mobility Management for wearable_0
+396.0 Starting Mobility Management for wearable_1
+400.0 Starting Mobility Management for wearable_3
+402.0 Starting Mobility Management for wearable_1
+404.0 Starting Mobility Management for wearable_2
+409.0 Starting Mobility Management for wearable_4
+411.0 Starting Mobility Management for wearable_0
+415.0 Starting Mobility Management for wearable_1
+417.0 Starting Mobility Management for wearable_3
+417.0 Starting Mobility Management for wearable_4
+420.0 Starting Mobility Management for wearable_2
+424.0 Starting Mobility Management for wearable_2
+425.0 Starting Mobility Management for wearable_3
+429.0 Starting Mobility Management for wearable_0
+429.0 Starting Mobility Management for wearable_4
+430.0 Starting Mobility Management for wearable_1
+431.0 Starting Mobility Management for wearable_0
+432.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+gateway_10 is sending mService2
+gateway_10 is sending mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+432.02gateway_107 is receiving mService2
+432.02gateway_107 is receiving mService1
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+432.02gateway_107 is receiving mService2
+gateway_107 is sending mService1
+432.02gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+432.02gateway_107 is receiving mService2
+gateway_107 is sending mService1
+432.02gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_107 under Launch module
+Module mService1created on gateway_107 under Launch module
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+434.0 Starting Mobility Management for wearable_4
+439.0 Starting Mobility Management for wearable_2
+440.0 Starting Mobility Management for wearable_3
+441.0 Starting Mobility Management for wearable_1
+446.0 Starting Mobility Management for wearable_0
+447.0 Starting Mobility Management for wearable_4
+452.0 Starting Mobility Management for wearable_1
+455.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 24
+Child wearable_3	----->	Parent gateway_91
+Migrating mService2 from gateway_107 to gateway_91
+Migrating mService1 from gateway_107 to gateway_91
+Migrating mService2 from gateway_107 to gateway_91
+Migrating mService1 from gateway_107 to gateway_91
+Migrating mService2 from gateway_107 to gateway_91
+Migrating mService1 from gateway_107 to gateway_91
+Service Discovery Info ADDED (device:127) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:127) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:127) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 127
+455.04gateway_91 is receiving mService2
+455.04gateway_91 is receiving mService1
+Service Discovery Info ADDED (device:127) for microservice :mService2 , destDevice : 127
+gateway_91 is sending mService2
+455.04gateway_91 is receiving mService2
+gateway_91 is sending mService1
+455.04gateway_91 is receiving mService1
+Service Discovery Info REMOVED (device:127) for microservice :mService2 , destDevice : 127
+Service Discovery Info ADDED (device:127) for microservice :mService2 , destDevice : 127
+gateway_91 is sending mService2
+455.04gateway_91 is receiving mService2
+gateway_91 is sending mService1
+455.04gateway_91 is receiving mService1
+Service Discovery Info REMOVED (device:127) for microservice :mService2 , destDevice : 127
+Service Discovery Info ADDED (device:127) for microservice :mService2 , destDevice : 127
+gateway_107 is sending mService2
+gateway_107 is sending mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_91 under Launch module
+Module mService1created on gateway_91 under Launch module
+Module mService2 already deplyed ongateway_91
+Module mService1 already deplyed ongateway_91
+Module mService2 already deplyed ongateway_91
+Module mService1 already deplyed ongateway_91
+456.0 Starting Mobility Management for wearable_2
+456.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_1
+Migrating mService2 from gateway_91 to gateway_1
+Migrating mService1 from gateway_91 to gateway_1
+Migrating mService2 from gateway_91 to gateway_1
+Migrating mService1 from gateway_91 to gateway_1
+Migrating mService2 from gateway_91 to gateway_1
+Migrating mService1 from gateway_91 to gateway_1
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+456.02gateway_1 is receiving mService2
+456.02gateway_1 is receiving mService1
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_1 is sending mService2
+456.02gateway_1 is receiving mService2
+gateway_1 is sending mService1
+456.02gateway_1 is receiving mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_1 is sending mService2
+456.02gateway_1 is receiving mService2
+gateway_1 is sending mService1
+456.02gateway_1 is receiving mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_91 is sending mService2
+gateway_91 is sending mService1
+Service Discovery Info REMOVED (device:127) for microservice :mService2 , destDevice : 127
+Module mService2 already deplyed ongateway_1
+Module mService1created on gateway_1 under Launch module
+Module mService2 already deplyed ongateway_1
+Module mService1 already deplyed ongateway_1
+Module mService2 already deplyed ongateway_1
+Module mService1 already deplyed ongateway_1
+457.0 Starting Mobility Management for wearable_0
+466.0 Starting Mobility Management for wearable_1
+466.0 Starting Mobility Management for wearable_4
+467.0 Starting Mobility Management for wearable_2
+470.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 25
+Child wearable_3	----->	Parent gateway_10
+Migrating mService2 from gateway_1 to gateway_10
+Migrating mService1 from gateway_1 to gateway_10
+Migrating mService2 from gateway_1 to gateway_10
+Migrating mService1 from gateway_1 to gateway_10
+Migrating mService2 from gateway_1 to gateway_10
+Migrating mService1 from gateway_1 to gateway_10
+Service Discovery Info ADDED (device:46) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:46) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:46) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 46
+gateway_1 is sending mService2
+gateway_1 is sending mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+470.04gateway_10 is receiving mService2
+470.04gateway_10 is receiving mService1
+Service Discovery Info ADDED (device:46) for microservice :mService2 , destDevice : 46
+gateway_10 is sending mService2
+470.04gateway_10 is receiving mService2
+gateway_10 is sending mService1
+470.04gateway_10 is receiving mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+Service Discovery Info ADDED (device:46) for microservice :mService2 , destDevice : 46
+gateway_10 is sending mService2
+470.04gateway_10 is receiving mService2
+gateway_10 is sending mService1
+470.04gateway_10 is receiving mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+Service Discovery Info ADDED (device:46) for microservice :mService2 , destDevice : 46
+Module mService2created on gateway_10 under Launch module
+Module mService1created on gateway_10 under Launch module
+Module mService2 already deplyed ongateway_10
+Module mService1 already deplyed ongateway_10
+Module mService2 already deplyed ongateway_10
+Module mService1 already deplyed ongateway_10
+474.0 Starting Mobility Management for wearable_0
+474.0 Starting Mobility Management for wearable_2
+474.0 Starting Mobility Management for wearable_4
+475.0 Starting Mobility Management for wearable_1
+476.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+gateway_10 is sending mService2
+gateway_10 is sending mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+476.02gateway_107 is receiving mService2
+476.02gateway_107 is receiving mService1
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+476.02gateway_107 is receiving mService2
+gateway_107 is sending mService1
+476.02gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+476.02gateway_107 is receiving mService2
+gateway_107 is sending mService1
+476.02gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_107 under Launch module
+Module mService1created on gateway_107 under Launch module
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+479.0 Starting Mobility Management for wearable_1
+483.0 Starting Mobility Management for wearable_0
+484.0 Starting Mobility Management for wearable_4
+486.0 Starting Mobility Management for wearable_2
+489.0 Starting Mobility Management for wearable_1
+493.0 Starting Mobility Management for wearable_2
+494.0 Starting Mobility Management for wearable_3
+496.0 Starting Mobility Management for wearable_0
+498.0 Starting Mobility Management for wearable_1
+499.0 Starting Mobility Management for wearable_0
+500.0 Starting Mobility Management for wearable_0
+503.0 Starting Mobility Management for wearable_0
+503.0 Starting Mobility Management for wearable_4
+507.0 Starting Mobility Management for wearable_2
+509.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 24
+Child wearable_3	----->	Parent gateway_46
+Migrating mService2 from gateway_107 to gateway_46
+Migrating mService1 from gateway_107 to gateway_46
+Migrating mService2 from gateway_107 to gateway_46
+Migrating mService1 from gateway_107 to gateway_46
+Migrating mService2 from gateway_107 to gateway_46
+Migrating mService1 from gateway_107 to gateway_46
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+509.04gateway_46 is receiving mService2
+509.04gateway_46 is receiving mService1
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_46 is sending mService2
+509.04gateway_46 is receiving mService2
+gateway_46 is sending mService1
+509.04gateway_46 is receiving mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_46 is sending mService2
+509.04gateway_46 is receiving mService2
+gateway_46 is sending mService1
+509.04gateway_46 is receiving mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_107 is sending mService2
+gateway_107 is sending mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_46 under Launch module
+Module mService1created on gateway_46 under Launch module
+Module mService2 already deplyed ongateway_46
+Module mService1 already deplyed ongateway_46
+Module mService2 already deplyed ongateway_46
+Module mService1 already deplyed ongateway_46
+510.0 Starting Mobility Management for wearable_3
+513.0 Starting Mobility Management for wearable_0
+517.0 Starting Mobility Management for wearable_1
+517.0 Starting Mobility Management for wearable_2
+518.0 Starting Mobility Management for wearable_1
+521.0 Starting Mobility Management for wearable_3
+521.0 Starting Mobility Management for wearable_4
+527.0 Starting Mobility Management for wearable_0
+528.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_1
+Migrating mService2 from gateway_46 to gateway_1
+Migrating mService1 from gateway_46 to gateway_1
+Migrating mService2 from gateway_46 to gateway_1
+Migrating mService1 from gateway_46 to gateway_1
+Migrating mService2 from gateway_46 to gateway_1
+Migrating mService1 from gateway_46 to gateway_1
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+528.02gateway_1 is receiving mService2
+528.02gateway_1 is receiving mService1
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_1 is sending mService2
+528.02gateway_1 is receiving mService2
+gateway_1 is sending mService1
+528.02gateway_1 is receiving mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_1 is sending mService2
+528.02gateway_1 is receiving mService2
+gateway_1 is sending mService1
+528.02gateway_1 is receiving mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_46 is sending mService2
+gateway_46 is sending mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Module mService2 already deplyed ongateway_1
+Module mService1created on gateway_1 under Launch module
+Module mService2 already deplyed ongateway_1
+Module mService1 already deplyed ongateway_1
+Module mService2 already deplyed ongateway_1
+Module mService1 already deplyed ongateway_1
+531.0 Starting Mobility Management for wearable_1
+535.0 Starting Mobility Management for wearable_4
+536.0 Starting Mobility Management for wearable_2
+536.0 Starting Mobility Management for wearable_3
+537.0 Starting Mobility Management for wearable_4
+538.0 Starting Mobility Management for wearable_4
+542.0 Starting Mobility Management for wearable_0
+550.0 Starting Mobility Management for wearable_1
+550.0 Starting Mobility Management for wearable_3
+550.0 Starting Mobility Management for wearable_4
+553.0 Starting Mobility Management for wearable_3
+554.0 Starting Mobility Management for wearable_2
+556.0 Starting Mobility Management for wearable_3
+559.0 Starting Mobility Management for wearable_0
+561.0 Starting Mobility Management for wearable_3
+564.0 Starting Mobility Management for wearable_4
+565.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 25
+Child wearable_3	----->	Parent gateway_107
+Migrating mService2 from gateway_1 to gateway_107
+Migrating mService1 from gateway_1 to gateway_107
+Migrating mService2 from gateway_1 to gateway_107
+Migrating mService1 from gateway_1 to gateway_107
+Migrating mService2 from gateway_1 to gateway_107
+Migrating mService1 from gateway_1 to gateway_107
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+gateway_1 is sending mService2
+gateway_1 is sending mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+565.04gateway_107 is receiving mService2
+565.04gateway_107 is receiving mService1
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+565.04gateway_107 is receiving mService2
+gateway_107 is sending mService1
+565.04gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+565.04gateway_107 is receiving mService2
+gateway_107 is sending mService1
+565.04gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_107 under Launch module
+Module mService1created on gateway_107 under Launch module
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+568.0 Starting Mobility Management for wearable_3
+569.0 Starting Mobility Management for wearable_2
+570.0 Starting Mobility Management for wearable_1
+571.0 Starting Mobility Management for wearable_0
+577.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_10
+Migrating mService2 from gateway_107 to gateway_10
+Migrating mService1 from gateway_107 to gateway_10
+Migrating mService2 from gateway_107 to gateway_10
+Migrating mService1 from gateway_107 to gateway_10
+Migrating mService2 from gateway_107 to gateway_10
+Migrating mService1 from gateway_107 to gateway_10
+Service Discovery Info ADDED (device:46) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:46) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:46) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 46
+577.02gateway_10 is receiving mService2
+577.02gateway_10 is receiving mService1
+Service Discovery Info ADDED (device:46) for microservice :mService2 , destDevice : 46
+gateway_10 is sending mService2
+577.02gateway_10 is receiving mService2
+gateway_10 is sending mService1
+577.02gateway_10 is receiving mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+Service Discovery Info ADDED (device:46) for microservice :mService2 , destDevice : 46
+gateway_10 is sending mService2
+577.02gateway_10 is receiving mService2
+gateway_10 is sending mService1
+577.02gateway_10 is receiving mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+Service Discovery Info ADDED (device:46) for microservice :mService2 , destDevice : 46
+gateway_107 is sending mService2
+gateway_107 is sending mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_10 under Launch module
+Module mService1created on gateway_10 under Launch module
+Module mService2 already deplyed ongateway_10
+Module mService1 already deplyed ongateway_10
+Module mService2 already deplyed ongateway_10
+Module mService1 already deplyed ongateway_10
+578.0 Starting Mobility Management for wearable_3
+579.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Migrating mService2 from gateway_10 to gateway_107
+Migrating mService1 from gateway_10 to gateway_107
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 46
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+gateway_10 is sending mService2
+gateway_10 is sending mService1
+Service Discovery Info REMOVED (device:46) for microservice :mService2 , destDevice : 46
+579.02gateway_107 is receiving mService2
+579.02gateway_107 is receiving mService1
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+579.02gateway_107 is receiving mService2
+gateway_107 is sending mService1
+579.02gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+579.02gateway_107 is receiving mService2
+gateway_107 is sending mService1
+579.02gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_107 under Launch module
+Module mService1created on gateway_107 under Launch module
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+582.0 Starting Mobility Management for wearable_1
+584.0 Starting Mobility Management for wearable_4
+585.0 Starting Mobility Management for wearable_0
+585.0 Starting Mobility Management for wearable_1
+585.0 Starting Mobility Management for wearable_2
+586.0 Starting Mobility Management for wearable_0
+589.0 Starting Mobility Management for wearable_3
+596.0 Starting Mobility Management for wearable_2
+599.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 24
+Child wearable_3	----->	Parent gateway_1
+Migrating mService2 from gateway_107 to gateway_1
+Migrating mService1 from gateway_107 to gateway_1
+Migrating mService2 from gateway_107 to gateway_1
+Migrating mService1 from gateway_107 to gateway_1
+Migrating mService2 from gateway_107 to gateway_1
+Migrating mService1 from gateway_107 to gateway_1
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:37) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 37
+599.04gateway_1 is receiving mService2
+599.04gateway_1 is receiving mService1
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_1 is sending mService2
+599.04gateway_1 is receiving mService2
+gateway_1 is sending mService1
+599.04gateway_1 is receiving mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_1 is sending mService2
+599.04gateway_1 is receiving mService2
+gateway_1 is sending mService1
+599.04gateway_1 is receiving mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+Service Discovery Info ADDED (device:37) for microservice :mService2 , destDevice : 37
+gateway_107 is sending mService2
+gateway_107 is sending mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2 already deplyed ongateway_1
+Module mService1created on gateway_1 under Launch module
+Module mService2 already deplyed ongateway_1
+Module mService1 already deplyed ongateway_1
+Module mService2 already deplyed ongateway_1
+Module mService1 already deplyed ongateway_1
+602.0 Starting Mobility Management for wearable_4
+603.0 Starting Mobility Management for wearable_1
+604.0 Starting Mobility Management for wearable_0
+606.0 Starting Mobility Management for wearable_4
+607.0 Starting Mobility Management for wearable_2
+611.0 Starting Mobility Management for wearable_2
+612.0 Starting Mobility Management for wearable_0
+615.0 Starting Mobility Management for wearable_0
+617.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 25
+Child wearable_3	----->	Parent gateway_107
+Migrating mService2 from gateway_1 to gateway_107
+Migrating mService1 from gateway_1 to gateway_107
+Migrating mService2 from gateway_1 to gateway_107
+Migrating mService1 from gateway_1 to gateway_107
+Migrating mService2 from gateway_1 to gateway_107
+Migrating mService1 from gateway_1 to gateway_107
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:143) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 37
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 143
+gateway_1 is sending mService2
+gateway_1 is sending mService1
+Service Discovery Info REMOVED (device:37) for microservice :mService2 , destDevice : 37
+617.04gateway_107 is receiving mService2
+617.04gateway_107 is receiving mService1
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+617.04gateway_107 is receiving mService2
+gateway_107 is sending mService1
+617.04gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+gateway_107 is sending mService2
+617.04gateway_107 is receiving mService2
+gateway_107 is sending mService1
+617.04gateway_107 is receiving mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Service Discovery Info ADDED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_107 under Launch module
+Module mService1created on gateway_107 under Launch module
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+Module mService2 already deplyed ongateway_107
+Module mService1 already deplyed ongateway_107
+620.0 Starting Mobility Management for wearable_4
+621.0 Starting Mobility Management for wearable_3
+Orchestrator Node for device : 15 updated to 24
+Child wearable_3	----->	Parent gateway_91
+Migrating mService2 from gateway_107 to gateway_91
+Migrating mService1 from gateway_107 to gateway_91
+Migrating mService2 from gateway_107 to gateway_91
+Migrating mService1 from gateway_107 to gateway_91
+Migrating mService2 from gateway_107 to gateway_91
+Migrating mService1 from gateway_107 to gateway_91
+Service Discovery Info ADDED (device:127) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:127) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:127) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 143
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 127
+621.04gateway_91 is receiving mService2
+621.04gateway_91 is receiving mService1
+Service Discovery Info ADDED (device:127) for microservice :mService2 , destDevice : 127
+gateway_91 is sending mService2
+621.04gateway_91 is receiving mService2
+gateway_91 is sending mService1
+621.04gateway_91 is receiving mService1
+Service Discovery Info REMOVED (device:127) for microservice :mService2 , destDevice : 127
+Service Discovery Info ADDED (device:127) for microservice :mService2 , destDevice : 127
+gateway_91 is sending mService2
+621.04gateway_91 is receiving mService2
+gateway_91 is sending mService1
+621.04gateway_91 is receiving mService1
+Service Discovery Info REMOVED (device:127) for microservice :mService2 , destDevice : 127
+Service Discovery Info ADDED (device:127) for microservice :mService2 , destDevice : 127
+gateway_107 is sending mService2
+gateway_107 is sending mService1
+Service Discovery Info REMOVED (device:143) for microservice :mService2 , destDevice : 143
+Module mService2created on gateway_91 under Launch module
+Module mService1created on gateway_91 under Launch module
+Module mService2 already deplyed ongateway_91
+Module mService1 already deplyed ongateway_91
+Module mService2 already deplyed ongateway_91
+Module mService1 already deplyed ongateway_91
+623.0 Starting Mobility Management for wearable_0
+623.0 Starting Mobility Management for wearable_1
+624.0 Starting Mobility Management for wearable_1
+627.0 Starting Mobility Management for wearable_0
+627.0 Starting Mobility Management for wearable_1
+630.0 Starting Mobility Management for wearable_2
+633.0 Starting Mobility Management for wearable_1
+637.0 Starting Mobility Management for wearable_4
+638.0 Starting Mobility Management for wearable_0
+638.0 Starting Mobility Management for wearable_3
+640.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_46
+Migrating mService2 from gateway_91 to gateway_46
+Migrating mService1 from gateway_91 to gateway_46
+Migrating mService2 from gateway_91 to gateway_46
+Migrating mService1 from gateway_91 to gateway_46
+Migrating mService2 from gateway_91 to gateway_46
+Migrating mService1 from gateway_91 to gateway_46
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 127
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+640.02gateway_46 is receiving mService2
+640.02gateway_46 is receiving mService1
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_46 is sending mService2
+640.02gateway_46 is receiving mService2
+gateway_46 is sending mService1
+640.02gateway_46 is receiving mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_46 is sending mService2
+640.02gateway_46 is receiving mService2
+gateway_46 is sending mService1
+640.02gateway_46 is receiving mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_91 is sending mService2
+gateway_91 is sending mService1
+Service Discovery Info REMOVED (device:127) for microservice :mService2 , destDevice : 127
+Module mService2created on gateway_46 under Launch module
+Module mService1created on gateway_46 under Launch module
+Module mService2 already deplyed ongateway_46
+Module mService1 already deplyed ongateway_46
+Module mService2 already deplyed ongateway_46
+Module mService1 already deplyed ongateway_46
+641.0 Starting Mobility Management for wearable_4
+642.0 Starting Mobility Management for wearable_1
+649.0 Starting Mobility Management for wearable_2
+650.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_7
+Migrating mService2 from gateway_46 to gateway_7
+Migrating mService1 from gateway_46 to gateway_7
+Migrating mService2 from gateway_46 to gateway_7
+Migrating mService1 from gateway_46 to gateway_7
+Migrating mService2 from gateway_46 to gateway_7
+Migrating mService1 from gateway_46 to gateway_7
+Service Discovery Info ADDED (device:43) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:43) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:43) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 43
+650.02gateway_7 is receiving mService2
+650.02gateway_7 is receiving mService1
+Service Discovery Info ADDED (device:43) for microservice :mService2 , destDevice : 43
+gateway_7 is sending mService2
+650.02gateway_7 is receiving mService2
+gateway_7 is sending mService1
+650.02gateway_7 is receiving mService1
+Service Discovery Info REMOVED (device:43) for microservice :mService2 , destDevice : 43
+Service Discovery Info ADDED (device:43) for microservice :mService2 , destDevice : 43
+gateway_7 is sending mService2
+650.02gateway_7 is receiving mService2
+gateway_7 is sending mService1
+650.02gateway_7 is receiving mService1
+Service Discovery Info REMOVED (device:43) for microservice :mService2 , destDevice : 43
+Service Discovery Info ADDED (device:43) for microservice :mService2 , destDevice : 43
+gateway_46 is sending mService2
+gateway_46 is sending mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Module mService2created on gateway_7 under Launch module
+Module mService1created on gateway_7 under Launch module
+Module mService2 already deplyed ongateway_7
+Module mService1 already deplyed ongateway_7
+Module mService2 already deplyed ongateway_7
+Module mService1 already deplyed ongateway_7
+652.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_46
+Migrating mService2 from gateway_7 to gateway_46
+Migrating mService1 from gateway_7 to gateway_46
+Migrating mService2 from gateway_7 to gateway_46
+Migrating mService1 from gateway_7 to gateway_46
+Migrating mService2 from gateway_7 to gateway_46
+Migrating mService1 from gateway_7 to gateway_46
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:82) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 82
+gateway_7 is sending mService2
+gateway_7 is sending mService1
+Service Discovery Info REMOVED (device:43) for microservice :mService2 , destDevice : 43
+652.02gateway_46 is receiving mService2
+652.02gateway_46 is receiving mService1
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_46 is sending mService2
+652.02gateway_46 is receiving mService2
+gateway_46 is sending mService1
+652.02gateway_46 is receiving mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+gateway_46 is sending mService2
+652.02gateway_46 is receiving mService2
+gateway_46 is sending mService1
+652.02gateway_46 is receiving mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Service Discovery Info ADDED (device:82) for microservice :mService2 , destDevice : 82
+Module mService2created on gateway_46 under Launch module
+Module mService1 placement on gateway_46 failed
+Module mService2 already deplyed ongateway_46
+Module mService1 already deplyed ongateway_46
+Module mService2 already deplyed ongateway_46
+Module mService1 already deplyed ongateway_46
+656.0 Starting Mobility Management for wearable_0
+657.0 Starting Mobility Management for wearable_2
+657.0 Starting Mobility Management for wearable_4
+658.0 Starting Mobility Management for wearable_4
+659.0 Starting Mobility Management for wearable_1
+664.0 Starting Mobility Management for wearable_4
+667.0 Starting Mobility Management for wearable_0
+667.0 Starting Mobility Management for wearable_1
+667.0 Starting Mobility Management for wearable_2
+668.0 Starting Mobility Management for wearable_2
+671.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_7
+Migrating mService2 from gateway_46 to gateway_7
+Migrating mService1 from gateway_46 to gateway_7
+Migrating mService2 from gateway_46 to gateway_7
+Migrating mService1 from gateway_46 to gateway_7
+Migrating mService2 from gateway_46 to gateway_7
+Migrating mService1 from gateway_46 to gateway_7
+Service Discovery Info ADDED (device:43) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:43) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:43) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 82
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 43
+671.02gateway_7 is receiving mService2
+671.02gateway_7 is receiving mService1
+Service Discovery Info ADDED (device:43) for microservice :mService2 , destDevice : 43
+gateway_7 is sending mService2
+671.02gateway_7 is receiving mService2
+gateway_7 is sending mService1
+671.02gateway_7 is receiving mService1
+Service Discovery Info REMOVED (device:43) for microservice :mService2 , destDevice : 43
+Service Discovery Info ADDED (device:43) for microservice :mService2 , destDevice : 43
+gateway_7 is sending mService2
+671.02gateway_7 is receiving mService2
+gateway_7 is sending mService1
+671.02gateway_7 is receiving mService1
+Service Discovery Info REMOVED (device:43) for microservice :mService2 , destDevice : 43
+Service Discovery Info ADDED (device:43) for microservice :mService2 , destDevice : 43
+gateway_46 is sending mService2
+gateway_46 is sending mService1
+Service Discovery Info REMOVED (device:82) for microservice :mService2 , destDevice : 82
+Module mService2created on gateway_7 under Launch module
+Module mService1created on gateway_7 under Launch module
+Module mService2 already deplyed ongateway_7
+Module mService1 already deplyed ongateway_7
+Module mService2 already deplyed ongateway_7
+Module mService1 already deplyed ongateway_7
+673.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_81
+Migrating mService2 from gateway_7 to gateway_81
+Migrating mService1 from gateway_7 to gateway_81
+Migrating mService2 from gateway_7 to gateway_81
+Migrating mService1 from gateway_7 to gateway_81
+Migrating mService2 from gateway_7 to gateway_81
+Migrating mService1 from gateway_7 to gateway_81
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 43
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+gateway_7 is sending mService2
+gateway_7 is sending mService1
+Service Discovery Info REMOVED (device:43) for microservice :mService2 , destDevice : 43
+673.02gateway_81 is receiving mService2
+673.02gateway_81 is receiving mService1
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+gateway_81 is sending mService2
+673.02gateway_81 is receiving mService2
+gateway_81 is sending mService1
+673.02gateway_81 is receiving mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+gateway_81 is sending mService2
+673.02gateway_81 is receiving mService2
+gateway_81 is sending mService1
+673.02gateway_81 is receiving mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+Module mService2created on gateway_81 under Launch module
+Module mService1created on gateway_81 under Launch module
+Module mService2 already deplyed ongateway_81
+Module mService1 already deplyed ongateway_81
+Module mService2 already deplyed ongateway_81
+Module mService1 already deplyed ongateway_81
+678.0 Starting Mobility Management for wearable_4
+679.0 Starting Mobility Management for wearable_4
+681.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_44
+Migrating mService2 from gateway_81 to gateway_44
+Migrating mService1 from gateway_81 to gateway_44
+Migrating mService2 from gateway_81 to gateway_44
+Migrating mService1 from gateway_81 to gateway_44
+Migrating mService2 from gateway_81 to gateway_44
+Migrating mService1 from gateway_81 to gateway_44
+Service Discovery Info ADDED (device:80) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:80) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:80) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 80
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 80
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 80
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 80
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 80
+681.02gateway_44 is receiving mService2
+681.02gateway_44 is receiving mService1
+Service Discovery Info ADDED (device:80) for microservice :mService2 , destDevice : 80
+gateway_44 is sending mService2
+681.02gateway_44 is receiving mService2
+gateway_44 is sending mService1
+681.02gateway_44 is receiving mService1
+Service Discovery Info REMOVED (device:80) for microservice :mService2 , destDevice : 80
+Service Discovery Info ADDED (device:80) for microservice :mService2 , destDevice : 80
+gateway_44 is sending mService2
+681.02gateway_44 is receiving mService2
+gateway_44 is sending mService1
+681.02gateway_44 is receiving mService1
+Service Discovery Info REMOVED (device:80) for microservice :mService2 , destDevice : 80
+Service Discovery Info ADDED (device:80) for microservice :mService2 , destDevice : 80
+gateway_81 is sending mService2
+gateway_81 is sending mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Module mService2created on gateway_44 under Launch module
+Module mService1created on gateway_44 under Launch module
+Module mService2 already deplyed ongateway_44
+Module mService1 already deplyed ongateway_44
+Module mService2 already deplyed ongateway_44
+Module mService1 already deplyed ongateway_44
+684.0 Starting Mobility Management for wearable_1
+686.0 Starting Mobility Management for wearable_0
+686.0 Starting Mobility Management for wearable_2
+689.0 Starting Mobility Management for wearable_0
+690.0 Starting Mobility Management for wearable_1
+692.0 Starting Mobility Management for wearable_4
+699.0 Starting Mobility Management for wearable_1
+699.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_81
+Migrating mService2 from gateway_44 to gateway_81
+Migrating mService1 from gateway_44 to gateway_81
+Migrating mService2 from gateway_44 to gateway_81
+Migrating mService1 from gateway_44 to gateway_81
+Migrating mService2 from gateway_44 to gateway_81
+Migrating mService1 from gateway_44 to gateway_81
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 80
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+gateway_44 is sending mService2
+gateway_44 is sending mService1
+Service Discovery Info REMOVED (device:80) for microservice :mService2 , destDevice : 80
+699.02gateway_81 is receiving mService2
+699.02gateway_81 is receiving mService1
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+gateway_81 is sending mService2
+699.02gateway_81 is receiving mService2
+gateway_81 is sending mService1
+699.02gateway_81 is receiving mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+gateway_81 is sending mService2
+699.02gateway_81 is receiving mService2
+gateway_81 is sending mService1
+699.02gateway_81 is receiving mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+Module mService2created on gateway_81 under Launch module
+Module mService1created on gateway_81 under Launch module
+Module mService2 already deplyed ongateway_81
+Module mService1 already deplyed ongateway_81
+Module mService2 already deplyed ongateway_81
+Module mService1 already deplyed ongateway_81
+703.0 Starting Mobility Management for wearable_2
+704.0 Starting Mobility Management for wearable_3
+706.0 Starting Mobility Management for wearable_0
+707.0 Starting Mobility Management for wearable_4
+710.0 Starting Mobility Management for wearable_2
+711.0 Starting Mobility Management for wearable_1
+717.0 Starting Mobility Management for wearable_4
+723.0 Starting Mobility Management for wearable_3
+726.0 Starting Mobility Management for wearable_0
+726.0 Starting Mobility Management for wearable_3
+729.0 Starting Mobility Management for wearable_2
+730.0 Starting Mobility Management for wearable_2
+731.0 Starting Mobility Management for wearable_1
+735.0 Starting Mobility Management for wearable_2
+736.0 Starting Mobility Management for wearable_4
+737.0 Starting Mobility Management for wearable_1
+737.0 Starting Mobility Management for wearable_2
+742.0 Starting Mobility Management for wearable_3
+746.0 Starting Mobility Management for wearable_0
+749.0 Starting Mobility Management for wearable_4
+752.0 Starting Mobility Management for wearable_0
+752.0 Starting Mobility Management for wearable_1
+755.0 Starting Mobility Management for wearable_1
+755.0 Starting Mobility Management for wearable_4
+757.0 Starting Mobility Management for wearable_2
+758.0 Starting Mobility Management for wearable_1
+762.0 Starting Mobility Management for wearable_0
+762.0 Starting Mobility Management for wearable_3
+764.0 Starting Mobility Management for wearable_2
+773.0 Starting Mobility Management for wearable_1
+774.0 Starting Mobility Management for wearable_4
+776.0 Starting Mobility Management for wearable_4
+777.0 Starting Mobility Management for wearable_0
+781.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_80
+Migrating mService2 from gateway_81 to gateway_80
+Migrating mService1 from gateway_81 to gateway_80
+Migrating mService2 from gateway_81 to gateway_80
+Migrating mService1 from gateway_81 to gateway_80
+Migrating mService2 from gateway_81 to gateway_80
+Migrating mService1 from gateway_81 to gateway_80
+Service Discovery Info ADDED (device:116) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:116) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:116) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 116
+781.02gateway_80 is receiving mService2
+781.02gateway_80 is receiving mService1
+Service Discovery Info ADDED (device:116) for microservice :mService2 , destDevice : 116
+gateway_80 is sending mService2
+781.02gateway_80 is receiving mService2
+gateway_80 is sending mService1
+781.02gateway_80 is receiving mService1
+Service Discovery Info REMOVED (device:116) for microservice :mService2 , destDevice : 116
+Service Discovery Info ADDED (device:116) for microservice :mService2 , destDevice : 116
+gateway_80 is sending mService2
+781.02gateway_80 is receiving mService2
+gateway_80 is sending mService1
+781.02gateway_80 is receiving mService1
+Service Discovery Info REMOVED (device:116) for microservice :mService2 , destDevice : 116
+Service Discovery Info ADDED (device:116) for microservice :mService2 , destDevice : 116
+gateway_81 is sending mService2
+gateway_81 is sending mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Module mService2 already deplyed ongateway_80
+Module mService1 already deplyed ongateway_80
+Module mService2 already deplyed ongateway_80
+Module mService1 already deplyed ongateway_80
+Module mService2 already deplyed ongateway_80
+Module mService1 already deplyed ongateway_80
+783.0 Starting Mobility Management for wearable_2
+785.0 Starting Mobility Management for wearable_3
+786.0 Starting Mobility Management for wearable_0
+786.0 Starting Mobility Management for wearable_1
+788.0 Starting Mobility Management for wearable_4
+795.0 Starting Mobility Management for wearable_0
+795.0 Starting Mobility Management for wearable_1
+796.0 Starting Mobility Management for wearable_2
+799.0 Starting Mobility Management for wearable_3
+802.0 Starting Mobility Management for wearable_0
+806.0 Starting Mobility Management for wearable_0
+807.0 Starting Mobility Management for wearable_4
+808.0 Starting Mobility Management for wearable_0
+811.0 Starting Mobility Management for wearable_1
+812.0 Starting Mobility Management for wearable_4
+814.0 Starting Mobility Management for wearable_2
+814.0 Starting Mobility Management for wearable_3
+820.0 Starting Mobility Management for wearable_4
+822.0 Starting Mobility Management for wearable_1
+824.0 Starting Mobility Management for wearable_4
+825.0 Starting Mobility Management for wearable_0
+825.0 Starting Mobility Management for wearable_3
+826.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_81
+Migrating mService2 from gateway_80 to gateway_81
+Migrating mService1 from gateway_80 to gateway_81
+Migrating mService2 from gateway_80 to gateway_81
+Migrating mService1 from gateway_80 to gateway_81
+Migrating mService2 from gateway_80 to gateway_81
+Migrating mService1 from gateway_80 to gateway_81
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:117) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 117
+gateway_80 is sending mService2
+gateway_80 is sending mService1
+Service Discovery Info REMOVED (device:116) for microservice :mService2 , destDevice : 116
+826.02gateway_81 is receiving mService2
+826.02gateway_81 is receiving mService1
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+gateway_81 is sending mService2
+826.02gateway_81 is receiving mService2
+gateway_81 is sending mService1
+826.02gateway_81 is receiving mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+gateway_81 is sending mService2
+826.02gateway_81 is receiving mService2
+gateway_81 is sending mService1
+826.02gateway_81 is receiving mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Service Discovery Info ADDED (device:117) for microservice :mService2 , destDevice : 117
+Module mService2created on gateway_81 under Launch module
+Module mService1created on gateway_81 under Launch module
+Module mService2 already deplyed ongateway_81
+Module mService1 already deplyed ongateway_81
+Module mService2 already deplyed ongateway_81
+Module mService1 already deplyed ongateway_81
+829.0 Starting Mobility Management for wearable_0
+831.0 Starting Mobility Management for wearable_2
+833.0 Starting Mobility Management for wearable_3
+Child wearable_3	----->	Parent gateway_80
+Migrating mService2 from gateway_81 to gateway_80
+Migrating mService1 from gateway_81 to gateway_80
+Migrating mService2 from gateway_81 to gateway_80
+Migrating mService1 from gateway_81 to gateway_80
+Migrating mService2 from gateway_81 to gateway_80
+Migrating mService1 from gateway_81 to gateway_80
+Service Discovery Info ADDED (device:116) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:116) for microservice :mService3 , destDevice : 23
+Service Discovery Info ADDED (device:116) for microservice :mService3 , destDevice : 23
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 117
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info REMOVED (device:15) for microservice :mService1 , destDevice : 116
+Service Discovery Info ADDED (device:15) for microservice :mService1 , destDevice : 116
+833.02gateway_80 is receiving mService2
+833.02gateway_80 is receiving mService1
+Service Discovery Info ADDED (device:116) for microservice :mService2 , destDevice : 116
+gateway_80 is sending mService2
+833.02gateway_80 is receiving mService2
+gateway_80 is sending mService1
+833.02gateway_80 is receiving mService1
+Service Discovery Info REMOVED (device:116) for microservice :mService2 , destDevice : 116
+Service Discovery Info ADDED (device:116) for microservice :mService2 , destDevice : 116
+gateway_80 is sending mService2
+833.02gateway_80 is receiving mService2
+gateway_80 is sending mService1
+833.02gateway_80 is receiving mService1
+Service Discovery Info REMOVED (device:116) for microservice :mService2 , destDevice : 116
+Service Discovery Info ADDED (device:116) for microservice :mService2 , destDevice : 116
+gateway_81 is sending mService2
+gateway_81 is sending mService1
+Service Discovery Info REMOVED (device:117) for microservice :mService2 , destDevice : 117
+Module mService2 already deplyed ongateway_80
+Module mService1 already deplyed ongateway_80
+Module mService2 already deplyed ongateway_80
+Module mService1 already deplyed ongateway_80
+Module mService2 already deplyed ongateway_80
+Module mService1 already deplyed ongateway_80
+836.0 Starting Mobility Management for wearable_1
+837.0 Starting Mobility Management for wearable_2
+838.0 Starting Mobility Management for wearable_4
+842.0 Starting Mobility Management for wearable_1
+846.0 Starting Mobility Management for wearable_0
+850.0 Starting Mobility Management for wearable_3
+855.0 Starting Mobility Management for wearable_2
+858.0 Starting Mobility Management for wearable_4
+862.0 Starting Mobility Management for wearable_1
+865.0 Starting Mobility Management for wearable_0
+866.0 Starting Mobility Management for wearable_1
+866.0 Starting Mobility Management for wearable_3
+868.0 Starting Mobility Management for wearable_2
+873.0 Starting Mobility Management for wearable_2
+873.0 Starting Mobility Management for wearable_3
+876.0 Starting Mobility Management for wearable_4
+881.0 Starting Mobility Management for wearable_4
+883.0 Starting Mobility Management for wearable_0
+885.0 Starting Mobility Management for wearable_1
+889.0 Starting Mobility Management for wearable_3
+890.0 Starting Mobility Management for wearable_2
+894.0 Starting Mobility Management for wearable_3
+895.0 Starting Mobility Management for wearable_1
+896.0 Starting Mobility Management for wearable_3
+896.0 Starting Mobility Management for wearable_4
+902.0 Starting Mobility Management for wearable_0
+909.0 Starting Mobility Management for wearable_2
+915.0 Starting Mobility Management for wearable_1
+916.0 Starting Mobility Management for wearable_3
+916.0 Starting Mobility Management for wearable_4
+920.0 Starting Mobility Management for wearable_0
+920.0 Starting Mobility Management for wearable_3
+923.0 Starting Mobility Management for wearable_1
+923.0 Starting Mobility Management for wearable_2
+923.0 Starting Mobility Management for wearable_4
+928.0 Starting Mobility Management for wearable_2
+931.0 Starting Mobility Management for wearable_0
+935.0 Starting Mobility Management for wearable_0
+940.0 Starting Mobility Management for wearable_4
+941.0 Starting Mobility Management for wearable_1
+945.0 Starting Mobility Management for wearable_2
+949.0 Starting Mobility Management for wearable_0
+951.0 Starting Mobility Management for wearable_0
+951.0 Starting Mobility Management for wearable_1
+953.0 Starting Mobility Management for wearable_0
+957.0 Starting Mobility Management for wearable_4
+962.0 Starting Mobility Management for wearable_2
+964.0 Starting Mobility Management for wearable_1
+968.0 Starting Mobility Management for wearable_2
+970.0 Starting Mobility Management for wearable_4
+971.0 Starting Mobility Management for wearable_0
+977.0 Starting Mobility Management for wearable_4
+980.0 Starting Mobility Management for wearable_2
+983.0 Starting Mobility Management for wearable_1
+985.0 Starting Mobility Management for wearable_1
+987.0 Starting Mobility Management for wearable_0
+987.0 Starting Mobility Management for wearable_4
+995.0 Starting Mobility Management for wearable_2
+998.0 Starting Mobility Management for wearable_1
+1002.0 Starting Mobility Management for wearable_2
+1005.0 Starting Mobility Management for wearable_0
+1007.0 Starting Mobility Management for wearable_4
+1009.0 Starting Mobility Management for wearable_0
+1012.0 Starting Mobility Management for wearable_4
+1014.0 Starting Mobility Management for wearable_1
+1016.0 Starting Mobility Management for wearable_0
+1020.0 Starting Mobility Management for wearable_2
+1025.0 Starting Mobility Management for wearable_4
+1026.0 Starting Mobility Management for wearable_1
+1030.0 Starting Mobility Management for wearable_0
+1031.0 Starting Mobility Management for wearable_1
+1034.0 Starting Mobility Management for wearable_2
+1038.0 Starting Mobility Management for wearable_0
+1044.0 Starting Mobility Management for wearable_4
+1046.0 Starting Mobility Management for wearable_1
+1051.0 Starting Mobility Management for wearable_0
+1052.0 Starting Mobility Management for wearable_0
+1053.0 Starting Mobility Management for wearable_2
+1058.0 Starting Mobility Management for wearable_1
+1061.0 Starting Mobility Management for wearable_1
+1063.0 Starting Mobility Management for wearable_4
+1064.0 Starting Mobility Management for wearable_4
+1070.0 Starting Mobility Management for wearable_0
+1071.0 Starting Mobility Management for wearable_2
+1074.0 Starting Mobility Management for wearable_4
+1078.0 Starting Mobility Management for wearable_2
+1080.0 Starting Mobility Management for wearable_1
+1085.0 Starting Mobility Management for wearable_0
+1089.0 Starting Mobility Management for wearable_4
+1091.0 Starting Mobility Management for wearable_4
+1095.0 Starting Mobility Management for wearable_0
+1096.0 Starting Mobility Management for wearable_2
+1099.0 Starting Mobility Management for wearable_2
+1100.0 Starting Mobility Management for wearable_1
+1100.0 Starting Mobility Management for wearable_4
+1107.0 Starting Mobility Management for wearable_4
+1109.0 Starting Mobility Management for wearable_0
+1110.0 Starting Mobility Management for wearable_1
+1118.0 Starting Mobility Management for wearable_1
+1119.0 Starting Mobility Management for wearable_2
+1125.0 Starting Mobility Management for wearable_4
+1131.0 Starting Mobility Management for wearable_2
+1144.0 Starting Mobility Management for wearable_2
+1161.0 Starting Mobility Management for wearable_2
+1176.0 Starting Mobility Management for wearable_2
+1178.0 Starting Mobility Management for wearable_2
+1193.0 Starting Mobility Management for wearable_2
+1205.0 Starting Mobility Management for wearable_2
+=========================================
+============== RESULTS ==================
+=========================================
+EXECUTION TIME : 3793
+=========================================
+APPLICATION LOOP DELAYS
+=========================================
+[PPG, clientModule, mService1, mService2, mService3] ---> null
+=========================================
+TUPLE CPU EXECUTION DELAY
+=========================================
+=========================================
+wearable_0 : Energy Consumed = 98290.0
+wearable_1 : Energy Consumed = 98290.0
+wearable_2 : Energy Consumed = 98290.0
+wearable_3 : Energy Consumed = 98290.0
+wearable_4 : Energy Consumed = 98290.0
+cloud : Energy Consumed = 2676061.6071428563
+proxy-server_0 : Energy Consumed = 166866.59999999995
+proxy-server_1 : Energy Consumed = 166866.59999999995
+proxy-server_2 : Energy Consumed = 166866.59999999995
+proxy-server_3 : Energy Consumed = 166866.59999999995
+proxy-server_4 : Energy Consumed = 166866.59999999995
+proxy-server_5 : Energy Consumed = 166866.59999999995
+proxy-server_6 : Energy Consumed = 166866.59999999995
+proxy-server_7 : Energy Consumed = 166866.59999999995
+proxy-server_8 : Energy Consumed = 166866.59999999995
+proxy-server_9 : Energy Consumed = 166866.59999999995
+proxy-server_10 : Energy Consumed = 166866.59999999995
+proxy-server_11 : Energy Consumed = 166866.59999999995
+gateway_0 : Energy Consumed = 166866.59999999995
+gateway_1 : Energy Consumed = 204398.549
+gateway_2 : Energy Consumed = 166866.59999999995
+gateway_3 : Energy Consumed = 166866.59999999995
+gateway_4 : Energy Consumed = 166866.59999999995
+gateway_5 : Energy Consumed = 166866.59999999995
+gateway_6 : Energy Consumed = 166866.59999999995
+gateway_7 : Energy Consumed = 205115.71999999994
+gateway_8 : Energy Consumed = 166866.59999999995
+gateway_9 : Energy Consumed = 166866.59999999995
+gateway_10 : Energy Consumed = 199139.29499999993
+gateway_11 : Energy Consumed = 166866.59999999995
+gateway_12 : Energy Consumed = 166866.59999999995
+gateway_13 : Energy Consumed = 166866.59999999995
+gateway_14 : Energy Consumed = 166866.59999999995
+gateway_15 : Energy Consumed = 166866.59999999995
+gateway_16 : Energy Consumed = 166866.59999999995
+gateway_17 : Energy Consumed = 166866.59999999995
+gateway_18 : Energy Consumed = 166866.59999999995
+gateway_19 : Energy Consumed = 166866.59999999995
+gateway_20 : Energy Consumed = 166866.59999999995
+gateway_21 : Energy Consumed = 166866.59999999995
+gateway_22 : Energy Consumed = 166866.59999999995
+gateway_23 : Energy Consumed = 166866.59999999995
+gateway_24 : Energy Consumed = 166866.59999999995
+gateway_25 : Energy Consumed = 166866.59999999995
+gateway_26 : Energy Consumed = 166866.59999999995
+gateway_27 : Energy Consumed = 166866.59999999995
+gateway_28 : Energy Consumed = 166866.59999999995
+gateway_29 : Energy Consumed = 166866.59999999995
+gateway_30 : Energy Consumed = 166866.59999999995
+gateway_31 : Energy Consumed = 166866.59999999995
+gateway_32 : Energy Consumed = 166866.59999999995
+gateway_33 : Energy Consumed = 166866.59999999995
+gateway_34 : Energy Consumed = 166866.59999999995
+gateway_35 : Energy Consumed = 166866.59999999995
+gateway_36 : Energy Consumed = 166866.59999999995
+gateway_37 : Energy Consumed = 166866.59999999995
+gateway_38 : Energy Consumed = 166866.59999999995
+gateway_39 : Energy Consumed = 166866.59999999995
+gateway_40 : Energy Consumed = 166866.59999999995
+gateway_41 : Energy Consumed = 166866.59999999995
+gateway_42 : Energy Consumed = 166866.59999999995
+gateway_43 : Energy Consumed = 207745.34699999992
+gateway_44 : Energy Consumed = 189098.901
+gateway_45 : Energy Consumed = 166866.59999999995
+gateway_46 : Energy Consumed = 211331.20199999993
+gateway_47 : Energy Consumed = 166866.59999999995
+gateway_48 : Energy Consumed = 166866.59999999995
+gateway_49 : Energy Consumed = 166866.59999999995
+gateway_50 : Energy Consumed = 166866.59999999995
+gateway_51 : Energy Consumed = 166866.59999999995
+gateway_52 : Energy Consumed = 166866.59999999995
+gateway_53 : Energy Consumed = 179775.67799999999
+gateway_54 : Energy Consumed = 166866.59999999995
+gateway_55 : Energy Consumed = 166866.59999999995
+gateway_56 : Energy Consumed = 166866.59999999995
+gateway_57 : Energy Consumed = 166866.59999999995
+gateway_58 : Energy Consumed = 166866.59999999995
+gateway_59 : Energy Consumed = 166866.59999999995
+gateway_60 : Energy Consumed = 166866.59999999995
+gateway_61 : Energy Consumed = 166866.59999999995
+gateway_62 : Energy Consumed = 166866.59999999995
+gateway_63 : Energy Consumed = 166866.59999999995
+gateway_64 : Energy Consumed = 166866.59999999995
+gateway_65 : Energy Consumed = 166866.59999999995
+gateway_66 : Energy Consumed = 166866.59999999995
+gateway_67 : Energy Consumed = 166866.59999999995
+gateway_68 : Energy Consumed = 166866.59999999995
+gateway_69 : Energy Consumed = 166866.59999999995
+gateway_70 : Energy Consumed = 166866.59999999995
+gateway_71 : Energy Consumed = 166866.59999999995
+gateway_72 : Energy Consumed = 166866.59999999995
+gateway_73 : Energy Consumed = 166866.59999999995
+gateway_74 : Energy Consumed = 166866.59999999995
+gateway_75 : Energy Consumed = 166866.59999999995
+gateway_76 : Energy Consumed = 166866.59999999995
+gateway_77 : Energy Consumed = 166866.59999999995
+gateway_78 : Energy Consumed = 166866.59999999995
+gateway_79 : Energy Consumed = 166866.59999999995
+gateway_80 : Energy Consumed = 211450.73049999995
+gateway_81 : Energy Consumed = 212048.37299999993
+gateway_82 : Energy Consumed = 166866.59999999995
+gateway_83 : Energy Consumed = 166866.59999999995
+gateway_84 : Energy Consumed = 166866.59999999995
+gateway_85 : Energy Consumed = 166866.59999999995
+gateway_86 : Energy Consumed = 166866.59999999995
+gateway_87 : Energy Consumed = 166866.59999999995
+gateway_88 : Energy Consumed = 166866.59999999995
+gateway_89 : Energy Consumed = 166866.59999999995
+gateway_90 : Energy Consumed = 166866.59999999995
+gateway_91 : Energy Consumed = 206550.06199999992
+gateway_92 : Energy Consumed = 166866.59999999995
+gateway_93 : Energy Consumed = 166866.59999999995
+gateway_94 : Energy Consumed = 166866.59999999995
+gateway_95 : Energy Consumed = 166866.59999999995
+gateway_96 : Energy Consumed = 166866.59999999995
+gateway_97 : Energy Consumed = 166866.59999999995
+gateway_98 : Energy Consumed = 166866.59999999995
+gateway_99 : Energy Consumed = 166866.59999999995
+gateway_100 : Energy Consumed = 166866.59999999995
+gateway_101 : Energy Consumed = 166866.59999999995
+gateway_102 : Energy Consumed = 166866.59999999995
+gateway_103 : Energy Consumed = 166866.59999999995
+gateway_104 : Energy Consumed = 166866.59999999995
+gateway_105 : Energy Consumed = 166866.59999999995
+gateway_106 : Energy Consumed = 166866.59999999995
+gateway_107 : Energy Consumed = 201768.92199999993
+gateway_108 : Energy Consumed = 166866.59999999995
+gateway_109 : Energy Consumed = 166866.59999999995
+gateway_110 : Energy Consumed = 166866.59999999995
+gateway_111 : Energy Consumed = 166866.59999999995
+gateway_112 : Energy Consumed = 166866.59999999995
+gateway_113 : Energy Consumed = 166866.59999999995
+gateway_114 : Energy Consumed = 166866.59999999995
+gateway_115 : Energy Consumed = 166866.59999999995
+gateway_116 : Energy Consumed = 166866.59999999995
+gateway_117 : Energy Consumed = 212287.42999999993
+
+Cost of execution in cloud = 17100.000000000004
+Total network usage = 1.824
+Total time required for module migration = 18.2399999999997
