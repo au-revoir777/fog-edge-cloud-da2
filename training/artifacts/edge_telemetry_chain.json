@@ -1,0 +1,228 @@
+{
+  "ruleChain": {
+    "name": "Edge Telemetry Chain",
+    "type": "CORE",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": true,
+    "configuration": null,
+    "additionalInfo": {
+      "description": "Chain 1: Per-device edge processing for EdgeDevice_01/02/03. Works only on edge-layer fields. Hands off to Fog Intelligence Chain after saving."
+    }
+  },
+  "metadata": {
+    "version": 2,
+    "firstNodeIndex": 0,
+    "nodes": [
+      {
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "Enrich edge frame",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "// raw_severity_code comes from the edge device (pre-fog, unconfirmed)\nvar sc = msg.raw_severity_code !== undefined ? Number(msg.raw_severity_code) : 0;\nmsg.raw_severity_code = sc;\n\n// Human-readable label derived from edge model output only\nmsg.hypoxia_level = sc === 2 ? 'SEVERE' : sc === 1 ? 'MILD_UNCONFIRMED' : 'NORMAL';\nmsg.edge_processed_ts = new Date().toISOString();\n\n// Feature attribution annotation (Novel Addition 3 — edge layer)\nmsg.alert_reason = (msg.top_trigger_feature && msg.top_trigger_feature !== 'n/a')\n    ? msg.top_trigger_feature + ' (z=' + msg.trigger_feature_zscore + ')'\n    : 'n/a';\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "additionalInfo": {
+          "layoutX": 200,
+          "layoutY": 300,
+          "description": "Node 1: Annotate edge frame — uses edge fields only (raw_severity_code, top_trigger_feature). No fog fields accessed here."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode",
+        "name": "Save edge timeseries",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 1,
+        "configuration": {
+          "defaultTTL": 0,
+          "useServerTs": false,
+          "processingSettings": {
+            "type": "ON_EVERY_MESSAGE"
+          }
+        },
+        "additionalInfo": {
+          "layoutX": 400,
+          "layoutY": 300,
+          "description": "Node 2: Save edge timeseries. Only edge-layer fields are in the message at this point."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.filter.TbJsSwitchNode",
+        "name": "Route by raw severity",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "// Route on raw_severity_code from the edge model.\n// Note: mild alerts are UNCONFIRMED at this stage — fog confirmation\n// is handled in the Fog Intelligence Chain via fog_confirmed_severity.\nvar sc = Number(msg.raw_severity_code);\nif (sc === 2) return ['severe'];\nif (sc === 1) return ['mild'];\nreturn ['normal'];"
+        },
+        "additionalInfo": {
+          "layoutX": 600,
+          "layoutY": 300,
+          "description": "Node 3: Route by raw edge severity. Severe goes straight to alarm. Mild is raw (unconfirmed by fog) — alarm is advisory until fog confirms."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Severe alarm",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "severity": "CRITICAL",
+          "alarmType": "SEVERE_HYPOXIA",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "// Only edge fields — fog confirmation fields (fog_tier, adaptive_threshold)\n// are on FogGateway_01, not on this edge device\nvar d = {};\nd.spo2 = msg.spo2;\nd.p_severe = msg.p_severe;\nd.edge_confidence = msg.edge_confidence;\nd.alert_reason = msg.alert_reason;\nd.device_id = msg.device_id;\nreturn d;",
+          "useMessageAlarmData": false,
+          "overwriteAlarmDetails": true,
+          "propagate": true,
+          "propagateToOwner": false,
+          "propagateToTenant": false,
+          "dynamicSeverity": false
+        },
+        "additionalInfo": {
+          "layoutX": 800,
+          "layoutY": 150,
+          "description": "Node 4: Create SEVERE_HYPOXIA alarm on the edge device. Details contain edge-only fields."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Mild alarm",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "severity": "WARNING",
+          "alarmType": "MILD_HYPOXIA_UNCONFIRMED",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "// Advisory alarm from raw edge output — fog layer will confirm/suppress.\n// The fog_confirmed_severity field on FogGateway_01 is the authoritative decision.\nvar d = {};\nd.spo2 = msg.spo2;\nd.p_abnormal = msg.p_abnormal;\nd.edge_confidence = msg.edge_confidence;\nd.alert_reason = msg.alert_reason;\nd.device_id = msg.device_id;\nd.note = 'Unconfirmed at edge — check FogGateway_01 fog_confirmed_severity';\nreturn d;",
+          "useMessageAlarmData": false,
+          "overwriteAlarmDetails": true,
+          "propagate": false,
+          "propagateToOwner": false,
+          "propagateToTenant": false,
+          "dynamicSeverity": false
+        },
+        "additionalInfo": {
+          "layoutX": 800,
+          "layoutY": 250,
+          "description": "Node 5: Create MILD_HYPOXIA_UNCONFIRMED alarm. Advisory — awaits fog temporal confirmation."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Clear SEVERE",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "alarmType": "SEVERE_HYPOXIA",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.cleared_by = 'normal_edge_reading';\nd.spo2_at_clear = msg.spo2;\nd.device_id = msg.device_id;\nreturn d;"
+        },
+        "additionalInfo": {
+          "layoutX": 800,
+          "layoutY": 350,
+          "description": "Node 6: Clear SEVERE_HYPOXIA when edge returns to normal."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Clear MILD",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "alarmType": "MILD_HYPOXIA_UNCONFIRMED",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.cleared_by = 'normal_edge_reading';\nd.spo2_at_clear = msg.spo2;\nd.device_id = msg.device_id;\nreturn d;"
+        },
+        "additionalInfo": {
+          "layoutX": 800,
+          "layoutY": 450,
+          "description": "Node 7: Clear MILD_HYPOXIA_UNCONFIRMED when edge returns to normal."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.flow.TbRuleChainInputNode",
+        "name": "Forward to Fog Chain",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "ruleChainId": "PLACEHOLDER_FOG_CHAIN_ID"
+        },
+        "additionalInfo": {
+          "layoutX": 1000,
+          "layoutY": 300,
+          "description": "Node 8: Hand-off to Fog Intelligence Chain. UPDATE ruleChainId after importing Fog Chain. The fog chain handles FogGateway_01 messages which carry ward_anomaly and adaptive fog fields."
+        }
+      }
+    ],
+    "connections": [
+      {
+        "fromIndex": 0,
+        "toIndex": 1,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 1,
+        "toIndex": 2,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 3,
+        "type": "severe"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 4,
+        "type": "mild"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 5,
+        "type": "normal"
+      },
+      {
+        "fromIndex": 2,
+        "toIndex": 6,
+        "type": "normal"
+      },
+      {
+        "fromIndex": 3,
+        "toIndex": 7,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 4,
+        "toIndex": 7,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 5,
+        "toIndex": 7,
+        "type": "Success"
+      },
+      {
+        "fromIndex": 6,
+        "toIndex": 7,
+        "type": "Success"
+      }
+    ],
+    "ruleChainConnections": null
+  }
+}

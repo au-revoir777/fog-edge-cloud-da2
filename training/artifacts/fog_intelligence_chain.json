@@ -1,0 +1,231 @@
+{
+  "ruleChain": {
+    "name": "Fog Intelligence Chain",
+    "type": "CORE",
+    "firstRuleNodeId": null,
+    "root": false,
+    "debugMode": true,
+    "configuration": null,
+    "additionalInfo": {
+      "description": "Chain 2: Fog gateway processing for FogGateway_01. Operates ONLY on fog-layer fields. Handles ward-level anomaly alarms and fog-confirmed severity decisions."
+    }
+  },
+  "metadata": {
+    "version": 2,
+    "firstNodeIndex": 0,
+    "nodes": [
+      {
+        "type": "org.thingsboard.rule.engine.transform.TbTransformMsgNode",
+        "name": "Enrich fog frame",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var sc = msg.fog_confirmed_severity !== undefined ? Number(msg.fog_confirmed_severity) : 0;\nmsg.fog_confirmed_severity = sc;\nmsg.fog_hypoxia_level = sc === 2 ? 'SEVERE_CONFIRMED' : sc === 1 ? 'MILD_CONFIRMED' : 'NORMAL';\nmsg.fog_processed_ts = new Date().toISOString();\nvar thresh = msg.adaptive_threshold !== undefined ? Number(msg.adaptive_threshold) : 3;\nmsg.adaptive_mode = thresh === 1 ? 'RAPID_DROP' : thresh === 2 ? 'MODERATE_DROP' : 'STANDARD';\nreturn {msg: msg, metadata: metadata, msgType: msgType};"
+        },
+        "additionalInfo": {
+          "layoutX": 100,
+          "layoutY": 300,
+          "description": "Node 0: Enrich fog frame."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode",
+        "name": "Save fog timeseries",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 1,
+        "configuration": {
+          "defaultTTL": 0,
+          "useServerTs": false,
+          "processingSettings": {
+            "type": "ON_EVERY_MESSAGE"
+          }
+        },
+        "additionalInfo": {
+          "layoutX": 300,
+          "layoutY": 300,
+          "description": "Node 1: Save fog-layer timeseries."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.filter.TbJsSwitchNode",
+        "name": "Route ward anomaly",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var wa = msg.ward_anomaly !== undefined ? Number(msg.ward_anomaly) : 0;\nif (wa === 1) return ['ward_anomaly'];\nreturn ['no_anomaly'];"
+        },
+        "additionalInfo": {
+          "layoutX": 500,
+          "layoutY": 300,
+          "description": "Node 2: Route ward_anomaly FIRST — directly after save, before severity branching. This guarantees every message reaches this check regardless of alarm node output labels."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Ward anomaly alarm",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "severity": "WARNING",
+          "alarmType": "WARD_ANOMALY",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.active_devices = msg.active_devices_in_window;\nd.ward_anomaly_reason = msg.ward_anomaly_reason;\nd.fog_node = msg.fog_node_id;\nd.fog_confirmed_severity = msg.fog_confirmed_severity;\nd.note = 'Fog gateway: all 3 edge devices abnormal within 60s window';\nreturn d;",
+          "useMessageAlarmData": false,
+          "overwriteAlarmDetails": true,
+          "propagate": true,
+          "propagateToOwner": true,
+          "propagateToTenant": true,
+          "dynamicSeverity": false
+        },
+        "additionalInfo": {
+          "layoutX": 700,
+          "layoutY": 150,
+          "description": "Node 3: WARD_ANOMALY alarm — fires when ward_anomaly=1."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.filter.TbJsSwitchNode",
+        "name": "Route fog confirmed severity",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "var sc = Number(msg.fog_confirmed_severity);\nif (sc === 2) return ['severe_confirmed'];\nif (sc === 1) return ['mild_confirmed'];\nreturn ['normal_confirmed'];"
+        },
+        "additionalInfo": {
+          "layoutX": 700,
+          "layoutY": 350,
+          "description": "Node 4: Route by fog_confirmed_severity."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Fog severe alarm",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "severity": "CRITICAL",
+          "alarmType": "FOG_SEVERE_HYPOXIA_CONFIRMED",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.fog_confirmed_severity = msg.fog_confirmed_severity;\nd.fog_tier = msg.fog_tier;\nd.adaptive_mode = msg.adaptive_mode;\nd.fog_decision_reason = msg.fog_decision_reason;\nd.primary_device = msg.primary_device;\nd.fog_node_id = msg.fog_node_id;\nreturn d;",
+          "useMessageAlarmData": false,
+          "overwriteAlarmDetails": true,
+          "propagate": true,
+          "propagateToOwner": false,
+          "propagateToTenant": false,
+          "dynamicSeverity": false
+        },
+        "additionalInfo": {
+          "layoutX": 950,
+          "layoutY": 200,
+          "description": "Node 5: FOG_SEVERE_HYPOXIA_CONFIRMED alarm."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbCreateAlarmNode",
+        "name": "Fog mild confirmed alarm",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "severity": "WARNING",
+          "alarmType": "FOG_MILD_HYPOXIA_CONFIRMED",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.fog_confirmed_severity = msg.fog_confirmed_severity;\nd.adaptive_threshold = msg.adaptive_threshold;\nd.spo2_drop_rate = msg.spo2_drop_rate;\nd.fog_decision_reason = msg.fog_decision_reason;\nd.fog_tier = msg.fog_tier;\nd.primary_device = msg.primary_device;\nreturn d;",
+          "useMessageAlarmData": false,
+          "overwriteAlarmDetails": true,
+          "propagate": false,
+          "propagateToOwner": false,
+          "propagateToTenant": false,
+          "dynamicSeverity": false
+        },
+        "additionalInfo": {
+          "layoutX": 950,
+          "layoutY": 350,
+          "description": "Node 6: FOG_MILD_HYPOXIA_CONFIRMED alarm."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Clear fog severe",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "alarmType": "FOG_SEVERE_HYPOXIA_CONFIRMED",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.cleared_by = 'fog_normal_confirmed';\nd.fog_node_id = msg.fog_node_id;\nreturn d;"
+        },
+        "additionalInfo": {
+          "layoutX": 950,
+          "layoutY": 500,
+          "description": "Node 7: Clear FOG_SEVERE_HYPOXIA_CONFIRMED."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbClearAlarmNode",
+        "name": "Clear fog mild",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "alarmType": "FOG_MILD_HYPOXIA_CONFIRMED",
+          "scriptLang": "JS",
+          "alarmDetailsBuildJs": "var d = {};\nd.cleared_by = 'fog_normal_confirmed';\nd.fog_node_id = msg.fog_node_id;\nreturn d;"
+        },
+        "additionalInfo": {
+          "layoutX": 950,
+          "layoutY": 650,
+          "description": "Node 8: Clear FOG_MILD_HYPOXIA_CONFIRMED."
+        }
+      },
+      {
+        "type": "org.thingsboard.rule.engine.action.TbLogNode",
+        "name": "Fog normal log",
+        "debugSettings": null,
+        "singletonMode": false,
+        "queueName": null,
+        "configurationVersion": 0,
+        "configuration": {
+          "scriptLang": "JS",
+          "jsScript": "return 'FOG: normal ward state, ' + msg.active_devices_in_window + ' devices active, adaptive_threshold=' + msg.adaptive_threshold;"
+        },
+        "additionalInfo": {
+          "layoutX": 700,
+          "layoutY": 500,
+          "description": "Node 9: Log normal ward state."
+        }
+      }
+    ],
+    "connections": [
+      { "fromIndex": 0, "toIndex": 1, "type": "Success" },
+      { "fromIndex": 1, "toIndex": 2, "type": "Success" },
+      { "fromIndex": 2, "toIndex": 3, "type": "ward_anomaly" },
+      { "fromIndex": 2, "toIndex": 4, "type": "ward_anomaly" },
+      { "fromIndex": 2, "toIndex": 4, "type": "no_anomaly" },
+      { "fromIndex": 2, "toIndex": 9, "type": "no_anomaly" },
+      { "fromIndex": 4, "toIndex": 5, "type": "severe_confirmed" },
+      { "fromIndex": 4, "toIndex": 6, "type": "mild_confirmed" },
+      { "fromIndex": 4, "toIndex": 7, "type": "normal_confirmed" },
+      { "fromIndex": 4, "toIndex": 8, "type": "normal_confirmed" }
+    ],
+    "ruleChainConnections": null
+  }
+}
